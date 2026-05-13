@@ -1,6 +1,6 @@
 # Comment Sentiment Analysis - Your Responsibility
 
-## 📋 ඔබගේ කොටස - Overview
+## 📋 Your Section - Overview
 
 **Component Name:** Comment Sentiment Analysis  
 **Your Role:** Backend sentiment analysis model + API integration  
@@ -9,26 +9,26 @@
 
 ---
 
-## 🎯 ඔබගේ වගකරණීයතා (Your Responsibilities)
+## 🎯 Your Responsibilities
 
 ### 1. **Data Collection Module** 📥
-- **Task:** YouTube Data API සිට comments එක්කර ගත යුතුයි
+- **Task:** Collect comments from the YouTube Data API
 - **Technologies:** Python, YouTube Data API
 - **Output:** Comment dataset (text, timestamp, likes, user language)
 
 ### 2. **Text Preprocessing Module** 🧹
-- Clean comments (URLs, special characters remove කරන්න)
-- Tokenization (වචන වලට බෙදන්න)
+- Clean comments (remove URLs, special characters)
+- Tokenization (split into words)
 - Stop-word removal
 - Emoji handling
-- Lemmatization (words normalize කරන්න)
+- Lemmatization (normalize words)
 
 **Input:** Raw comments  
 **Output:** Cleaned, structured text data
 
 ### 3. **Language Detection Module** 🌐
-- প্রতিটি comment ගේ language හඳුනාගනු  
-- Geographic audience distribution identify කරන්න
+- Detect the language of each comment
+- Identify geographic audience distribution
 - Examples: Spanish = Latin America, Hindi = India
 
 ### 4. **Sentiment Classification Module** 🤖
@@ -43,12 +43,12 @@ Raw Comment → BERT Embedding → Classification Layer → Sentiment Score
 ```
 
 ### 5. **Topic Extraction Module** 📌
-- Comments එකින් frequently discussed topics හඳුනා ගන්න
+- Identify frequently discussed topics from comments
 - Topics: Actors, Storyline, Music, Visual Effects, Quality
-- Frequency counting සිට top topics identify කරන්න
+- Identify top topics by frequency counting
 
 ### 6. **Analytics & Visualization** 📊
-- Sentiment distribution calculate කරන්න (%)
+- Calculate sentiment distribution (%)
 - Generate insights for marketing teams
 - Create reports for decision-making
 
@@ -68,7 +68,7 @@ Raw Comment → BERT Embedding → Classification Layer → Sentiment Score
 
 ---
 
-## 🔄 System Flow - ඔබගේ කොටස
+## 🔄 System Flow - Your Section
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -100,9 +100,9 @@ Raw Comment → BERT Embedding → Classification Layer → Sentiment Score
 
 ---
 
-## 📊 Frontend Integration - ඔබගේ Output භාවිතා
+## 📊 Frontend Integration - How Your Output Is Used
 
-Frontend නේ **already implemented:**
+Frontend is **already implemented:**
 
 ### Sentiment Chart (Pie Chart)
 ```tsx
@@ -135,7 +135,7 @@ commentTopics: [
 
 ---
 
-## 🚀 Deliverables - ඔබ deliver කරන්න ඕනේ
+## 🚀 Deliverables - What You Need To Deliver
 
 ### Phase 1: Model Development
 - [ ] BERT model training code
@@ -167,7 +167,7 @@ commentTopics: [
 
 ---
 
-## 📈 Key Metrics (ඔබ track කරන්න ඕනේ)
+## 📈 Key Metrics (To Track)
 
 ```
 ✓ Model Accuracy: Target 85%+
@@ -203,7 +203,7 @@ AI-Powered Movie Trailer Analyzer
 
 ---
 
-## 💬 Team Presentation Tips - ඔබ කියන්න ඕනේ
+## 💬 Team Presentation Tips - What To Say
 
 ### Slide 1: Overview (30 seconds)
 "Our Comment Sentiment Analysis component analyzes YouTube trailer comments using BERT-based NLP to classify sentiment into positive, neutral, and negative categories."
@@ -305,23 +305,23 @@ From **Section 4.2 of your Research Proposal:**
 
 ## ⚠️ Important Notes
 
-1. **API Rate Limiting:** YouTube API එකට limits තිබේ - handle කරන්න
-2. **Model Size:** BERT model large - optimize කරන්න deployment එක්ට
-3. **Privacy:** Public comments only - user data එක collect කරන්න එපා
-4. **Testing:** Accuracy 85%+ achieve කරන්න බැලු ගන්න
-5. **Documentation:** Code comments ලිවින්න team members clear උන්න
+1. **API Rate Limiting:** The YouTube API has rate limits - handle them
+2. **Model Size:** BERT models are large - optimize for deployment
+3. **Privacy:** Collect only public comments - do not collect personal user data
+4. **Testing:** Aim for 85%+ accuracy
+5. **Documentation:** Write clear code comments so team members understand
 
 ---
 
-## 🎓 Final Checklist - Presentation වලට
+## 🎓 Final Checklist - For Presentation
 
-- [ ] ඔබගේ component කුමන problem solve කරන්ද පැහැදිලි කරපු
-- [ ] Architecture diagram පෙන්වපු
-- [ ] Technologies & tools explain කරපු
-- [ ] Team එකට කුමන data pass කරන්ද කිපු
-- [ ] Timeline & deliverables present කරපු
-- [ ] Demo / Mock results පෙන්වපු (frontend charts)
-- [ ] Challenges & solutions discussed කරපු
+- [ ] Clearly state which problem your component solves
+- [ ] Show the architecture diagram
+- [ ] Explain technologies & tools used
+- [ ] Specify what data to pass to other teams
+- [ ] Present timeline & deliverables
+- [ ] Show demo/mock results (frontend charts)
+- [ ] Discuss challenges and proposed solutions
 
 ---
 
@@ -339,4 +339,4 @@ From **Section 4.2 of your Research Proposal:**
 
 ---
 
-**Good luck! පුරුදු වෙන් ගිහිරුවතින් සාර්ථකයි! 🚀**
+**Good luck! Wishing you success! 🚀**
