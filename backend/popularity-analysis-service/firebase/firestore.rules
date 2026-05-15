@@ -1,0 +1,11 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Backend uses Firebase Admin SDK, so these rules do not restrict server-side Admin access.
+    // Keep client-side access locked down unless you build a frontend with Firebase Authentication.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
