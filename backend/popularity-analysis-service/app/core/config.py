@@ -26,8 +26,12 @@ class Settings(BaseSettings):
     youtube_api_key: str | None = Field(default=None, alias="YOUTUBE_API_KEY")
     youtube_api_timeout_seconds: int = Field(default=10, alias="YOUTUBE_API_TIMEOUT_SECONDS")
 
-    model_name: str = Field(default="SimulatedPopularityClassifier", alias="MODEL_NAME")
-    model_version: str = Field(default="v0.1-simulated", alias="MODEL_VERSION")
+    # ML settings
+    use_simulated_model: bool = Field(default=False, alias="USE_SIMULATED_MODEL")
+    ml_artifacts_dir: str = Field(default="app/ml", alias="ML_ARTIFACTS_DIR")
+    model_type: str = Field(default="random_forest", alias="MODEL_TYPE")
+    model_name: str = Field(default="RandomForestClassifier", alias="MODEL_NAME")
+    model_version: str = Field(default="v1.0-trained", alias="MODEL_VERSION")
 
     @property
     def cors_origin_list(self) -> List[str]:

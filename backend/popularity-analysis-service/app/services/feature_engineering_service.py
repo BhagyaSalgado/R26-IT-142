@@ -22,7 +22,7 @@ def _round(value: float) -> float:
 
 
 class FeatureEngineeringService:
-    """Calculates features used by the popularity prediction model."""
+    """Calculates the same features used in the Colab training notebook."""
 
     def build_features(self, trailer_id: str, published_at: str, metrics: Dict[str, int]) -> Dict[str, float | int | str]:
         view_count = int(metrics.get("view_count", 0))
@@ -33,12 +33,22 @@ class FeatureEngineeringService:
         published_dt = _parse_datetime(published_at)
         video_age_days = max(1, (now - published_dt).days)
 
-        engagement_rate = _safe_div(like_count + comment_count, view_count)
-        like_ratio = _safe_div(like_count, view_count)
-        comment_rate = _safe_div(comment_count, view_count)
+        safe_views = max(view_count, 1)
+        safe_age = max(video_age_days, 1)
+
+        engagement_rate = _safe_div(like_count + comment_count, safe_views)
+        like_ratio = _safe_div(like_count, safe_views)
+        comment_rate = _safe_div(comment_count, safe_views)
         comments_per_1000_views = comment_rate * 1000
-        views_per_day = _safe_div(view_count, video_age_days)
+
+        views_per_day = _safe_div(view_count, safe_age)
+        likes_per_day = _safe_div(like_count, safe_age)
+        comments_per_day = _safe_div(comment_count, safe_age)
         growth_rate = views_per_day
+
+        log_views = math.log1p(view_count)
+        log_likes = math.log1p(like_count)
+        log_comments = math.log1p(comment_count)
 
         popularity_score = self._calculate_popularity_score(
             view_count=view_count,
@@ -50,12 +60,21 @@ class FeatureEngineeringService:
         return {
             "id": trailer_id,
             "trailer_id": trailer_id,
+            # Raw feature names must match feature_columns.json from the notebook.
+            "views": int(view_count),
+            "likes": int(like_count),
+            "comment_count": int(comment_count),
             "video_age_days": int(video_age_days),
             "engagement_rate": _round(engagement_rate),
             "like_ratio": _round(like_ratio),
             "comment_rate": _round(comment_rate),
             "comments_per_1000_views": _round(comments_per_1000_views),
             "views_per_day": _round(views_per_day),
+            "likes_per_day": _round(likes_per_day),
+            "comments_per_day": _round(comments_per_day),
+            "log_views": _round(log_views),
+            "log_likes": _round(log_likes),
+            "log_comments": _round(log_comments),
             "growth_rate": _round(growth_rate),
             "popularity_score": _round(popularity_score),
         }
@@ -67,7 +86,7 @@ class FeatureEngineeringService:
         comments_per_1000_views: float,
         views_per_day: float,
     ) -> float:
-        """Heuristic score from 0 to 100 used until a trained model is integrated."""
+        """Heuristic score from 0 to 100 for dashboard display only."""
         view_score = min(math.log10(view_count + 1) / 7.5, 1.0) * 100
         engagement_score = min(engagement_rate / 0.08, 1.0) * 100
         comment_score = min(comments_per_1000_views / 10, 1.0) * 100

@@ -6,3 +6,7 @@ firebase-admin
 requests
 python-dotenv
 pytest
+numpy
+pandas
+scikit-learn
+joblib
