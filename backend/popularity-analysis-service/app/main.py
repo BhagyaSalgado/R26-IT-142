@@ -55,7 +55,7 @@ def root_health():
     return {
         "status": "success",
         "message": "Service is running.",
-        "firebase_mock_mode": settings.firebase_mock_mode,
+        "firebase_project_id": settings.firebase_project_id,
     }
 
 

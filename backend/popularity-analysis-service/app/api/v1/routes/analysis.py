@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, Query
 
 from app.core.config import Settings, get_settings
-from app.dependencies import get_repository
+from app.dependencies import get_user_repository
 from app.repositories.base import BaseRepository
 from app.schemas.analysis import AnalysisData, AnalyzeTrailerRequest, BatchAnalyzeRequest, ComponentOutput
 from app.schemas.common import ApiResponse
@@ -12,7 +12,7 @@ router = APIRouter(tags=["Analysis"])
 
 def get_analysis_service(
     settings: Settings = Depends(get_settings),
-    repository: BaseRepository = Depends(get_repository),
+    repository: BaseRepository = Depends(get_user_repository),
 ) -> AnalysisService:
     return AnalysisService(settings=settings, repository=repository)
 
@@ -35,6 +35,14 @@ def get_history(
     service: AnalysisService = Depends(get_analysis_service),
 ):
     return ApiResponse(message="Analysis history retrieved.", data=service.list_history(limit=limit))
+
+
+@router.get("/history/combined", response_model=ApiResponse[dict])
+def get_combined_history(
+    limit: int = Query(default=20, ge=1, le=100),
+    service: AnalysisService = Depends(get_analysis_service),
+):
+    return ApiResponse(message="Combined analysis history retrieved.", data=service.list_combined_history(limit=limit))
 
 
 @router.get("/component-output/{video_id}", response_model=ApiResponse[ComponentOutput])
