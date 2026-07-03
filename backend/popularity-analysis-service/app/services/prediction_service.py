@@ -3,29 +3,29 @@ from __future__ import annotations
 from typing import Dict
 
 from app.core.config import Settings
-from app.ml.trained_model import TrainedPopularityModel
+from app.ml.simulated_model import SimulatedPopularityModel
 
 
 class PredictionService:
-    """Prediction layer backed by trained ML artifacts."""
+    """Prediction layer.
+
+    This currently uses a simulated model so the microservice can be integrated with
+    frontend and Firebase immediately. Replace this service when trained models are ready.
+    """
 
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
-        self.model = TrainedPopularityModel(
-            artifacts_dir=settings.ml_artifacts_dir,
-            model_type=settings.model_type,
-        )
+        self.model = SimulatedPopularityModel()
 
     def predict(self, trailer_id: str, features: Dict[str, float]) -> Dict:
         predicted_class, confidence, probabilities = self.model.predict(features)
         recommendation = self._build_recommendation(predicted_class, features)
-
         return {
             "id": trailer_id,
             "trailer_id": trailer_id,
             "predicted_reaction": predicted_class,
             "confidence_score": confidence,
-            "model_name": self.model.model_name,
+            "model_name": self.settings.model_name,
             "model_version": self.settings.model_version,
             "probabilities": probabilities,
             "recommendation": recommendation,
