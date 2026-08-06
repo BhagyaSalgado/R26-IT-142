@@ -1,0 +1,36 @@
+# .dockerignore
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Files
+firebase-config.json
+*.xlsx
+*.csv
+
+# Directories
+.git
+.gitignore
+.github
+
+# Documentation
+*.md
+tests/
