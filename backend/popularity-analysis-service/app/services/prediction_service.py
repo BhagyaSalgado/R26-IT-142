@@ -16,6 +16,7 @@ class PredictionService:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
         self.model = SimulatedPopularityModel()
+        # self.model = SimulatedPopularityModel()
 
     def predict(self, trailer_id: str, features: Dict[str, float]) -> Dict:
         predicted_class, confidence, probabilities = self.model.predict(features)
