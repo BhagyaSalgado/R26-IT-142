@@ -40,7 +40,7 @@ export async function analyzeCommentSentiment(
   request: CommentAnalysisRequest
 ): Promise<CommentAnalysisResponse> {
   try {
-    const response = await fetch(`${API_BASE_URL}/sentiment/analyze`, {
+    const response = await fetch(`${API_BASE_URL}/sentiment/analyze/from-url`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
