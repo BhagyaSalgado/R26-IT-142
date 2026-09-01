@@ -1,10 +1,15 @@
 """API Routes for Sentiment Analysis"""
 
+from datetime import datetime
+import json
+import logging
+import subprocess
+from urllib.error import HTTPError, URLError
+from urllib.parse import parse_qs, urlencode, urlparse
+from urllib.request import ProxyHandler, Request, build_opener, urlopen
 from flask import Blueprint, request, jsonify
 from services.sentiment_service import SentimentService
 from services.firebase_service import FirebaseService
-from datetime import datetime
-import logging
 from config.settings import YOUTUBE_API_KEY, YOUTUBE_MAX_COMMENTS
 
 logger = logging.getLogger(__name__)
@@ -22,8 +27,6 @@ def _extract_video_id(url: str) -> str:
     if not url:
         return ''
     try:
-        from urllib.parse import urlparse, parse_qs
-
         parsed = urlparse(url)
         hostname = (parsed.hostname or '').lower()
         if hostname in ('youtu.be', 'www.youtu.be'):
@@ -37,35 +40,93 @@ def _extract_video_id(url: str) -> str:
     return ''
 
 
-def _fetch_youtube_comments(video_id: str, max_comments: int = 200) -> list:
-    """Fetch top-level YouTube comments using the Data API v3.
-
-    Requires `YOUTUBE_API_KEY` to be set in config.settings.
-    """
+def _fetch_youtube_comments(video_id: str, max_comments: int = 1000) -> list:
+    """Fetch top-level YouTube comments using YouTube Data API v3 REST."""
     comments = []
     if not YOUTUBE_API_KEY:
         raise RuntimeError('YOUTUBE_API_KEY not configured')
 
-    try:
-        from googleapiclient.discovery import build
+    def _request_comment_page(page_token: str | None) -> dict:
+        query = {
+            'part': 'snippet',
+            'videoId': video_id,
+            'maxResults': min(100, limit - fetched),
+            'textFormat': 'plainText',
+            'key': YOUTUBE_API_KEY
+        }
+        if page_token:
+            query['pageToken'] = page_token
 
-        service = build('youtube', 'v3', developerKey=YOUTUBE_API_KEY)
+        url = f"https://www.googleapis.com/youtube/v3/commentThreads?{urlencode(query)}"
+        request_obj = Request(
+            url,
+            method='GET',
+            headers={'Accept': 'application/json'}
+        )
+
+        # Some Windows setups expose a blocked local proxy via env vars,
+        # which causes [WinError 10013]. Retry once with proxies disabled.
+        try:
+            with urlopen(request_obj, timeout=15) as response:
+                return json.loads(response.read().decode('utf-8'))
+        except OSError as error:
+            if getattr(error, 'winerror', None) == 10013:
+                try:
+                    opener = build_opener(ProxyHandler({}))
+                    with opener.open(request_obj, timeout=15) as response:
+                        return json.loads(response.read().decode('utf-8'))
+                except OSError as proxyless_error:
+                    if getattr(proxyless_error, 'winerror', None) != 10013:
+                        raise
+                    # Final fallback: call curl executable directly. In some
+                    # Windows setups, outbound sockets are blocked for Python
+                    # but allowed for curl.
+                    cmd = [
+                        'curl',
+                        '--silent',
+                        '--show-error',
+                        '--fail',
+                        '--max-time',
+                        '20',
+                        '--noproxy',
+                        '*',
+                        url
+                    ]
+                    try:
+                        completed = subprocess.run(
+                            cmd,
+                            check=True,
+                            capture_output=True,
+                            text=True
+                        )
+                    except FileNotFoundError as missing_curl:
+                        raise RuntimeError(
+                            'Network blocked for Python (WinError 10013) and curl is not available'
+                        ) from missing_curl
+                    except subprocess.CalledProcessError as curl_error:
+                        stderr = (curl_error.stderr or '').strip()
+                        if stderr:
+                            raise RuntimeError(
+                                f'YouTube API request failed via curl: {stderr}'
+                            ) from curl_error
+                        raise RuntimeError(
+                            'YouTube API request failed via curl'
+                        ) from curl_error
+
+                    return json.loads(completed.stdout)
+            raise
+
+    try:
         next_token = None
         fetched = 0
         limit = int(YOUTUBE_MAX_COMMENTS or max_comments)
 
         while fetched < limit:
-            resp = (
-                service.commentThreads()
-                .list(
-                    part='snippet',
-                    videoId=video_id,
-                    maxResults=min(100, limit - fetched),
-                    pageToken=next_token,
-                    textFormat='plainText',
-                )
-                .execute()
-            )
+            resp = _request_comment_page(next_token)
+            error = resp.get('error', {})
+            if error:
+                message = error.get('message') or 'Unknown YouTube API error'
+                raise RuntimeError(message)
 
             for item in resp.get('items', []):
                 top = item.get('snippet', {}).get('topLevelComment', {}).get('snippet', {})
@@ -81,6 +142,18 @@ def _fetch_youtube_comments(video_id: str, max_comments: int = 200) -> list:
                 break
 
         return comments
+    except HTTPError as e:
+        detail = ''
+        try:
+            payload = json.loads(e.read().decode('utf-8'))
+            detail = payload.get('error', {}).get('message', '')
+        except Exception:
+            detail = ''
+        if detail:
+            raise RuntimeError(f"YouTube API error {e.code}: {detail}") from e
+        raise RuntimeError(f"YouTube API request failed with status {e.code}") from e
+    except URLError as e:
+        raise RuntimeError(f"YouTube API network error: {e.reason}") from e
     except Exception as e:
         logger.error(f"YouTube fetch error: {e}")
         raise
@@ -117,11 +190,13 @@ def analyze():
                 'success': False
             }), 400
         
+        trailer_title = data.get('trailer_title') or data.get('trailerTitle', '')
+
         # Analyze comments
         analysis = sentiment_service.analyze_comments(comments)
         
         # Save to Firebase
-        firebase_service.save_analysis_result(trailer_id, analysis)
+        firebase_service.save_analysis_result(trailer_id, analysis, trailer_title)
         
         return jsonify({
             'success': True,
@@ -154,12 +229,12 @@ def analyze_from_url():
             return jsonify({'error': 'Could not extract video id from URL', 'success': False}), 400
 
         try:
-            comments = _fetch_youtube_comments(video_id, max_comments=int(YOUTUBE_MAX_COMMENTS or 200))
+            comments = _fetch_youtube_comments(video_id, max_comments=int(YOUTUBE_MAX_COMMENTS or 1000))
         except RuntimeError as re:
-            return jsonify({'error': str(re), 'success': False}), 500
+            return jsonify({'error': str(re), 'success': False}), 502
         except Exception as e:
             logger.error(f"Failed to fetch comments: {e}")
-            return jsonify({'error': 'Failed to fetch comments', 'success': False}), 500
+            return jsonify({'error': f'Failed to fetch comments: {e}', 'success': False}), 500
 
         if not comments:
             return jsonify({'error': 'No comments found for this video', 'success': False}), 404
@@ -167,7 +242,7 @@ def analyze_from_url():
         analysis = sentiment_service.analyze_comments(comments)
 
         # Save to Firebase using video_id as trailer_id
-        firebase_service.save_analysis_result(video_id, analysis)
+        firebase_service.save_analysis_result(video_id, analysis, trailer_title)
 
         return jsonify({
             'success': True,
@@ -201,6 +276,29 @@ def get_analysis(trailer_id):
     
     except Exception as e:
         logger.error(f"Error retrieving analysis: {str(e)}")
+        return jsonify({
+            'error': str(e),
+            'success': False
+        }), 500
+
+
+@api_bp.route('/history', methods=['GET'])
+def get_history():
+    """Get the most recently analyzed trailers (default: 5)."""
+    try:
+        limit = request.args.get('limit', default=5, type=int)
+        limit = max(1, min(limit, 50))
+
+        records = firebase_service.get_recent_analyses(limit)
+
+        return jsonify({
+            'success': True,
+            'data': records,
+            'count': len(records)
+        }), 200
+
+    except Exception as e:
+        logger.error(f"Error retrieving history: {str(e)}")
         return jsonify({
             'error': str(e),
             'success': False
@@ -262,7 +360,8 @@ def status():
         return jsonify({
             'success': True,
             'firebase': 'ok' if firebase_ok else 'error',
-            'model': model_info['model_info'],
+            'firebase_mode': firebase_service.mode,
+            'model': model_info,
             'timestamp': datetime.now().isoformat()
         }), 200
     except Exception as e:
