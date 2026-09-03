@@ -7,7 +7,7 @@ Now it also captures **deeper audience emotions** (Anticipation, Excitement, Dis
 
 ---
 
-## 📊 What You Can See Now
+## 📊 What You Can See Now 
 
 ### 1. **Basic Sentiment Distribution** (Original)
 ```
