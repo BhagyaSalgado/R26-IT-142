@@ -22,7 +22,7 @@
 
 ---
 
-## ⚡ Get Started NOW dd
+## ⚡ Get Started NOW 
 
 
 ### Windows Users:
