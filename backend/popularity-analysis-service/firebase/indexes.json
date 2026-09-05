@@ -1,0 +1,12 @@
+{
+  "indexes": [
+    {
+      "collectionGroup": "analysis_history",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "created_at", "order": "DESCENDING" }
+      ]
+    }
+  ],
+  "fieldOverrides": []
+}

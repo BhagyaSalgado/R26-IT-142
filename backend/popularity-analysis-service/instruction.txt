@@ -1,0 +1,62 @@
+
+FASTAPI + FIREBASE FIRESTORE BACKEND INSTRUCTIONS
+
+Project: AI-Powered Movie Trailer Analyzer - Popularity Metrics Analysis Microservice
+
+1. Open terminal inside this folder.
+
+2. Create virtual environment:
+   Windows:
+      python -m venv venv
+      venv\Scripts\activate
+
+   macOS/Linux:
+      python3 -m venv venv
+      source venv/bin/activate
+
+3. Install packages:
+      pip install -r requirements.txt
+
+4. Create .env file:
+      Copy .env.example to .env
+
+5. For first test keep:
+      FIREBASE_MOCK_MODE=true
+
+   This runs without real Firebase credentials.
+
+6. Run backend:
+      uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
+
+7. Open Swagger API:
+      http://127.0.0.1:8000/docs
+
+8. Test main endpoint:
+      POST http://127.0.0.1:8000/api/v1/analyze
+
+   Body:
+      {
+        "youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      }
+
+9. To connect real Firebase Firestore:
+   - Create Firebase project
+   - Enable Firestore Database
+   - Generate Admin SDK private key JSON
+   - Save it as serviceAccountKey.json in this folder
+   - Update .env:
+        FIREBASE_MOCK_MODE=false
+        FIREBASE_PROJECT_ID=your-project-id
+        FIREBASE_CREDENTIALS_PATH=serviceAccountKey.json
+
+10. Optional YouTube API:
+   Add this in .env:
+        YOUTUBE_API_KEY=your-key
+
+   If not provided, backend uses simulated trailer data.
+
+11. ML model integration later:
+   - Train your real model separately
+   - Save .pkl files into app/ml/artifacts/
+   - Update app/services/prediction_service.py
+   - Replace SimulatedPopularityModel with your real model loader.
