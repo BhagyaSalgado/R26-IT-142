@@ -1,0 +1,16 @@
+[
+  "views",
+  "likes",
+  "comment_count",
+  "video_age_days",
+  "engagement_rate",
+  "like_ratio",
+  "comment_rate",
+  "comments_per_1000_views",
+  "views_per_day",
+  "likes_per_day",
+  "comments_per_day",
+  "log_views",
+  "log_likes",
+  "log_comments"
+]
