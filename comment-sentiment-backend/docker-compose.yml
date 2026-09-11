@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    container_name: movie-sentiment-backend
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=production
+      - DEBUG=False
+      - FIREBASE_CREDENTIALS=/app/firebase-config.json
+      - FIREBASE_DATABASE_URL=${FIREBASE_DATABASE_URL}
+    volumes:
+      - ./logs:/app/logs
+      - ./data:/app/data
+      - ./firebase-config.json:/app/firebase-config.json:ro
+    restart: always
+    networks:
+      - movie-network
+
+  # Optional: Run frontend in same network
+  frontend:
+    image: node:18-alpine
+    container_name: movie-sentiment-frontend
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    volumes:
+      - ../movie-trailer-analyzer-frontend:/app
+    command: npm run dev
+    environment:
+      - REACT_APP_API_URL=http://backend:5000
+    networks:
+      - movie-network
+    depends_on:
+      - backend
+
+networks:
+  movie-network:
+    driver: bridge
