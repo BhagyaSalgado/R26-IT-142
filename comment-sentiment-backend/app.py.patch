@@ -1,0 +1,3 @@
+"""Import fix for Flask app"""
+
+from flask import request
