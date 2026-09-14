@@ -1,0 +1,40 @@
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Firebase secrets
+serviceAccountKey.json
+firebase/serviceAccountKey.json
+*.serviceAccountKey.json
+
+# ML artifacts
+app/ml/artifacts/*.pkl
+app/ml/artifacts/*.joblib
+app/ml/artifacts/*.onnx
+app/ml/artifacts/*.zip
+!app/ml/artifacts/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/cache
+.pytest_cache/
+.coverage
+htmlcov/

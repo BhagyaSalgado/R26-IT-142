@@ -1,0 +1,23 @@
+{
+  "analyze_trailer": {
+    "method": "POST",
+    "url": "http://127.0.0.1:8000/api/v1/analyze",
+    "body": {
+      "youtube_url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+    }
+  },
+  "batch_analyze": {
+    "method": "POST",
+    "url": "http://127.0.0.1:8000/api/v1/batch-analyze",
+    "body": {
+      "youtube_urls": [
+        "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+        "https://youtu.be/aqz-KE-bpKQ"
+      ]
+    }
+  },
+  "component_output": {
+    "method": "GET",
+    "url": "http://127.0.0.1:8000/api/v1/component-output/dQw4w9WgXcQ"
+  }
+}
