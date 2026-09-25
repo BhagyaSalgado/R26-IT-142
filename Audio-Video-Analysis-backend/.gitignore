@@ -1,0 +1,109 @@
+# =========================
+# Environment / Secrets
+# =========================
+.env
+.env.local
+.env.*.local
+*.env
+
+# Secrets / Credentials
+secrets/
+credentials/
+*.pem
+*.key
+*.secret
+
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+env/
+venv/
+ENV/
+.venv/
+
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+*.egg-info/
+.installed.cfg
+*.egg
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# =========================
+# Firebase
+# =========================
+firebase-config.json
+firebase-adminsdk-*.json
+
+# =========================
+# Models / ML
+# =========================
+.cache/
+models/
+trained_models/
+*.pt
+*.pth
+*.bin
+*.safetensors
+
+# =========================
+# Data / Datasets
+# =========================
+data/
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# Testing
+# =========================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# =========================
+# Cache
+# =========================
+*.cache
+.mypy_cache/
+.ruff_cache/
+
+# =========================
+# OS
+# =========================
+Thumbs.db
+.DS_Store
