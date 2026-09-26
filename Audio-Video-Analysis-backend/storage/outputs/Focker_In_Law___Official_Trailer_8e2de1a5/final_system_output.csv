@@ -1,0 +1,22 @@
+scene,time,scene_type,scene_type_confidence,classification_reliable,M,A,O,F,EI,level,audio_mood,audio_emotion,audio_confidence,audio_emotion_raw_score,camera_angle,face_emotion,face_found,objects,tempo_bpm,mfcc_mean,spectral_centroid,fusion_confidence
+1,00:00-00:08,Romance,0.6111,True,0.1428,1.0,0.7172,0.5437,0.57,Medium,intense,angry,0.3714,0.3714,right,neutral,True,"chair, oven, person, tv",136.0,4.4941,1517.96,0.6111
+2,00:08-00:16,Romance,0.7519,True,0.1306,1.0,0.522,0.9202,0.59,Medium,intense,angry,0.3714,0.3714,left,neutral,True,"person, tv",136.0,3.2129,1424.19,0.7519
+3,00:16-00:24,Romance,0.5836,True,0.1188,0.5714,0.383,0.7525,0.4,Medium,emotional,happy,0.4054,0.4054,right,neutral,True,person,136.0,-1.6837,1957.69,0.5836
+4,00:24-00:32,Romance,0.4288,True,0.0898,0.876,0.6193,0.9991,0.57,Medium,intense,angry,0.3514,0.3514,right,neutral,True,"chair, person, tv",136.0,-0.384,1597.46,0.4288
+5,00:32-00:40,Comedy,0.4872,True,0.3659,0.6413,1.0,0.8759,0.65,Medium,emotional,happy,0.2857,0.2857,right,neutral,True,"car, person, suitcase",117.45,-2.1762,1794.23,0.4872
+6,00:40-00:48,Romance,0.4359,True,0.2067,0.662,0.9184,0.6922,0.56,Medium,emotional,fear,0.3333,0.3333,right,angry,True,"car, person",103.36,-0.3526,1941.66,0.4359
+7,00:48-00:56,Comedy,0.8918,True,0.3163,0.9426,1.0,0.6501,0.69,Medium,intense,angry,0.3421,0.3421,right,sad,True,"chair, dog, horse, person, refrigerator",215.33,0.1251,1956.41,0.8918
+8,00:56-01:04,Comedy,0.4491,True,0.2588,1.0,1.0,0.9392,0.73,High,emotional,angry,0.3462,0.3462,right,fear,True,"car, cup, dog, person, potted plant, suitcase, truck",103.36,2.5832,1802.37,0.4491
+9,01:04-01:12,Comedy,0.6116,True,0.3685,0.7506,0.5746,0.6812,0.57,Medium,emotional,angry,0.3929,0.3929,right,neutral,True,"chair, dining table, person",103.36,0.6343,2084.25,0.6116
+10,01:12-01:20,Dialogue,0.9084,True,0.1639,0.7435,0.7812,0.9999,0.59,Medium,emotional,fear,0.303,0.303,left,happy,True,"chair, cup, dining table, person, vase",103.36,-1.2732,1958.2,0.9084
+11,01:20-01:28,Dialogue,0.6263,True,0.2124,1.0,0.6286,0.9995,0.65,Medium,emotional,angry,0.3462,0.3462,left,sad,True,"chair, cup, person, toothbrush",103.36,2.9467,1914.11,0.6263
+12,01:28-01:36,Unknown,0.3915,False,0.1822,1.0,0.9575,0.6987,0.66,Medium,intense,angry,0.2727,0.2727,left,neutral,True,"cup, person, tie, vase, wine glass",123.05,7.1801,1563.0,0.3915
+13,01:36-01:44,Comedy,0.8448,True,0.1943,0.786,0.6552,0.3937,0.49,Medium,intense,angry,0.3421,0.3421,left,sad,True,"cell phone, chair, person",143.55,-1.5842,1968.92,0.8448
+14,01:44-01:52,Comedy,0.8855,True,0.2945,1.0,1.0,0.6785,0.7,High,intense,angry,0.4063,0.4063,right,neutral,True,"bottle, car, person",143.55,3.5474,2017.09,0.8855
+15,01:52-02:00,Comedy,0.8486,True,0.1625,0.9621,0.9126,0.9395,0.67,Medium,intense,angry,0.3714,0.3714,left,neutral,True,"car, chair, person, tv",129.2,-1.8294,2073.59,0.8486
+16,02:00-02:08,Comedy,0.4243,True,0.2559,1.0,0.9851,0.8108,0.71,High,intense,happy,0.4,0.4,right,neutral,True,"bottle, handbag, oven, person, refrigerator",143.55,4.9453,2223.72,0.4243
+17,02:08-02:16,Comedy,0.6194,True,0.3615,1.0,1.0,0.9959,0.78,High,intense,happy,0.3684,0.3684,right,sad,True,"bicycle, car, person",152.0,8.2931,2220.29,0.6194
+18,02:16-02:24,Comedy,0.4942,True,0.6225,1.0,0.6588,0.9999,0.8,High,intense,angry,0.4483,0.4483,right,neutral,True,"bicycle, person",143.55,12.2697,2152.04,0.4942
+19,02:24-02:32,Comedy,0.891,True,0.2784,1.0,0.3816,0.539,0.55,Medium,intense,angry,0.4063,0.4063,left,sad,True,person,143.55,2.5225,2121.93,0.891
+20,02:32-02:40,Comedy,0.5287,True,0.1796,0.7743,0.5334,0.9565,0.55,Medium,emotional,angry,0.3103,0.3103,left,neutral,True,"couch, person",117.45,-1.3417,1754.6,0.5287
+21,02:40-02:48,Unknown,0.3306,False,0.3274,1.0,0.7547,0.731,0.68,Medium,emotional,sad,0.3103,0.3103,left,sad,True,"book, cup, dog, person",89.1,1.1075,1907.29,0.3306
