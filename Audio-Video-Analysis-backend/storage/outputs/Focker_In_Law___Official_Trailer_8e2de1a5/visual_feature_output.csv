@@ -1,0 +1,22 @@
+scene,time,raw_motion,M,O,camera_angle,camera_confidence,face_emotion,face_confidence,face_found,F,objects,emotion,scene_type,scene_type_confidence,classification_reliable
+1,00:00-00:08,1.4282,0.1428,0.7172,right,0.4973,neutral,0.5437,True,0.5437,"chair, oven, person, tv",neutral,Romance,0.6111,True
+2,00:08-00:16,1.306,0.1306,0.522,left,0.5424,neutral,0.9202,True,0.9202,"person, tv",neutral,Romance,0.7519,True
+3,00:16-00:24,1.1884,0.1188,0.383,right,0.5472,neutral,0.7525,True,0.7525,person,neutral,Romance,0.5836,True
+4,00:24-00:32,0.8982,0.0898,0.6193,right,0.8206,neutral,0.9991,True,0.9991,"chair, person, tv",neutral,Romance,0.4288,True
+5,00:32-00:40,3.6593,0.3659,1.0,right,0.4954,neutral,0.8759,True,0.8759,"car, person, suitcase",neutral,Comedy,0.4872,True
+6,00:40-00:48,2.0672,0.2067,0.9184,right,0.7782,angry,0.6922,True,0.6922,"car, person",angry,Romance,0.4359,True
+7,00:48-00:56,3.1633,0.3163,1.0,right,0.6203,sad,0.6501,True,0.6501,"chair, dog, horse, person, refrigerator",sad,Comedy,0.8918,True
+8,00:56-01:04,2.588,0.2588,1.0,right,0.9656,fear,0.9392,True,0.9392,"car, cup, dog, person, potted plant, suitcase, truck",fear,Comedy,0.4491,True
+9,01:04-01:12,3.6845,0.3685,0.5746,right,0.8768,neutral,0.6812,True,0.6812,"chair, dining table, person",neutral,Comedy,0.6116,True
+10,01:12-01:20,1.6395,0.1639,0.7812,left,0.6648,happy,0.9999,True,0.9999,"chair, cup, dining table, person, vase",happy,Dialogue,0.9084,True
+11,01:20-01:28,2.1245,0.2124,0.6286,left,0.9641,sad,0.9995,True,0.9995,"chair, cup, person, toothbrush",sad,Dialogue,0.6263,True
+12,01:28-01:36,1.8224,0.1822,0.9575,left,0.6793,neutral,0.6987,True,0.6987,"cup, person, tie, vase, wine glass",neutral,Unknown,0.3915,False
+13,01:36-01:44,1.9434,0.1943,0.6552,left,0.7977,sad,0.3937,True,0.3937,"cell phone, chair, person",sad,Comedy,0.8448,True
+14,01:44-01:52,2.9452,0.2945,1.0,right,0.9684,neutral,0.6785,True,0.6785,"bottle, car, person",neutral,Comedy,0.8855,True
+15,01:52-02:00,1.6254,0.1625,0.9126,left,0.7773,neutral,0.9395,True,0.9395,"car, chair, person, tv",neutral,Comedy,0.8486,True
+16,02:00-02:08,2.5593,0.2559,0.9851,right,0.6183,neutral,0.8108,True,0.8108,"bottle, handbag, oven, person, refrigerator",neutral,Comedy,0.4243,True
+17,02:08-02:16,3.6145,0.3615,1.0,right,0.4292,sad,0.9959,True,0.9959,"bicycle, car, person",sad,Comedy,0.6194,True
+18,02:16-02:24,6.2247,0.6225,0.6588,right,0.4646,neutral,0.9999,True,0.9999,"bicycle, person",neutral,Comedy,0.4942,True
+19,02:24-02:32,2.7841,0.2784,0.3816,left,0.7838,sad,0.539,True,0.539,person,sad,Comedy,0.891,True
+20,02:32-02:40,1.7957,0.1796,0.5334,left,0.8477,neutral,0.9565,True,0.9565,"couch, person",neutral,Comedy,0.5287,True
+21,02:40-02:48,3.2737,0.3274,0.7547,left,0.7655,sad,0.731,True,0.731,"book, cup, dog, person",sad,Unknown,0.3306,False

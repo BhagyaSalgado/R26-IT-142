@@ -1,0 +1,64 @@
+{
+  "average_emotional_intensity": 0.63,
+  "engagement_level": "Medium engagement trailer",
+  "dominant_genre": "Comedy",
+  "secondary_genre": "Romance",
+  "genre_mixture": {
+    "Action": 0.0498,
+    "Comedy": 0.4494,
+    "Romance": 0.154,
+    "Thriller": 0.0999,
+    "Adventure": 0.12,
+    "Drama": 0.1269
+  },
+  "high_intensity_scenes": [
+    {
+      "scene": 8,
+      "time": "00:56-01:04",
+      "scene_type": "Comedy",
+      "EI": 0.73
+    },
+    {
+      "scene": 14,
+      "time": "01:44-01:52",
+      "scene_type": "Comedy",
+      "EI": 0.7
+    },
+    {
+      "scene": 16,
+      "time": "02:00-02:08",
+      "scene_type": "Comedy",
+      "EI": 0.71
+    },
+    {
+      "scene": 17,
+      "time": "02:08-02:16",
+      "scene_type": "Comedy",
+      "EI": 0.78
+    },
+    {
+      "scene": 18,
+      "time": "02:16-02:24",
+      "scene_type": "Comedy",
+      "EI": 0.8
+    }
+  ],
+  "scene_type_distribution": {
+    "Comedy": 12,
+    "Romance": 5,
+    "Dialogue": 2,
+    "Unknown": 2
+  },
+  "audio_mood_distribution": {
+    "intense": 12,
+    "emotional": 9
+  },
+  "video_emotion_distribution": {
+    "neutral": 12,
+    "sad": 6,
+    "angry": 1,
+    "fear": 1,
+    "happy": 1
+  },
+  "source_filename": "Focker-In-Law _ Official Trailer_86133aa0.mp4"
+}
