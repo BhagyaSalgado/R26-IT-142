@@ -1,0 +1,80 @@
+{
+  "average_emotional_intensity": 0.5,
+  "engagement_level": "Medium engagement trailer",
+  "dominant_genre": "Comedy",
+  "secondary_genre": "Romance",
+  "genre_mixture": {
+    "Action": 0.0436,
+    "Comedy": 0.3972,
+    "Romance": 0.2146,
+    "Thriller": 0.118,
+    "Adventure": 0.1112,
+    "Drama": 0.1155
+  },
+  "high_intensity_scenes": [
+    {
+      "scene": 24,
+      "time": "00:33.58-00:34.49",
+      "scene_type": "Comedy",
+      "EI": 0.74
+    },
+    {
+      "scene": 34,
+      "time": "00:47.96-00:49.42",
+      "scene_type": "Comedy",
+      "EI": 0.72
+    },
+    {
+      "scene": 90,
+      "time": "01:48.11-01:48.90",
+      "scene_type": "Comedy",
+      "EI": 0.72
+    },
+    {
+      "scene": 104,
+      "time": "02:03.50-02:04.75",
+      "scene_type": "Comedy",
+      "EI": 0.77
+    },
+    {
+      "scene": 105,
+      "time": "02:04.75-02:05.88",
+      "scene_type": "Dialogue",
+      "EI": 0.83
+    },
+    {
+      "scene": 124,
+      "time": "02:29.07-02:30.65",
+      "scene_type": "Dialogue",
+      "EI": 0.7
+    },
+    {
+      "scene": 131,
+      "time": "02:42.79-02:44.21",
+      "scene_type": "Comedy",
+      "EI": 0.75
+    }
+  ],
+  "scene_type_distribution": {
+    "Comedy": 67,
+    "Romance": 46,
+    "Emotional": 10,
+    "Dialogue": 8,
+    "Unknown": 3
+  },
+  "audio_mood_distribution": {
+    "intense": 101,
+    "suspense": 20,
+    "emotional": 13
+  },
+  "video_emotion_distribution": {
+    "unknown": 46,
+    "sad": 25,
+    "neutral": 20,
+    "fear": 18,
+    "happy": 10,
+    "angry": 8,
+    "surprise": 7
+  },
+  "source_filename": "Focker-In-Law _ Official Trailer_d2c51e21.mp4"
+}
