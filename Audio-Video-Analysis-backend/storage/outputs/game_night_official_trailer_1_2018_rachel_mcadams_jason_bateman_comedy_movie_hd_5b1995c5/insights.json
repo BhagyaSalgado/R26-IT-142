@@ -1,0 +1,68 @@
+{
+  "average_emotional_intensity": 0.37,
+  "engagement_level": "Low engagement trailer",
+  "dominant_genre": "Comedy",
+  "secondary_genre": "Romance",
+  "genre_mixture": {
+    "Action": 0.0498,
+    "Comedy": 0.2443,
+    "Romance": 0.2443,
+    "Thriller": 0.1178,
+    "Adventure": 0.1336,
+    "Drama": 0.2102
+  },
+  "high_intensity_scenes": [
+    {
+      "scene": 31,
+      "time": "00:46.96-00:50.05",
+      "scene_type": "Romance",
+      "EI": 0.72
+    },
+    {
+      "scene": 53,
+      "time": "01:16.83-01:17.70",
+      "scene_type": "Dialogue",
+      "EI": 0.76
+    },
+    {
+      "scene": 55,
+      "time": "01:18.58-01:19.37",
+      "scene_type": "Comedy",
+      "EI": 0.77
+    },
+    {
+      "scene": 70,
+      "time": "01:33.76-01:34.43",
+      "scene_type": "Romance",
+      "EI": 0.87
+    },
+    {
+      "scene": 71,
+      "time": "01:34.43-01:35.14",
+      "scene_type": "Comedy",
+      "EI": 0.72
+    }
+  ],
+  "scene_type_distribution": {
+    "Romance": 30,
+    "Emotional": 26,
+    "Comedy": 16,
+    "Unknown": 12,
+    "Dialogue": 8
+  },
+  "audio_mood_distribution": {
+    "suspense": 49,
+    "intense": 33,
+    "emotional": 9,
+    "calm": 1
+  },
+  "video_emotion_distribution": {
+    "unknown": 58,
+    "sad": 11,
+    "neutral": 8,
+    "happy": 6,
+    "fear": 5,
+    "angry": 4
+  },
+  "source_filename": "Game Night Official Trailer #1 (2018) Rachel McAdams, Jason Bateman Comedy Movie HD.mp4"
+}
