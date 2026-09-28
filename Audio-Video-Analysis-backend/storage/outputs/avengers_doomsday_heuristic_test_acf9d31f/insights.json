@@ -1,0 +1,40 @@
+{
+  "average_emotional_intensity": 0.4,
+  "engagement_level": "Low engagement trailer",
+  "dominant_genre": "Thriller",
+  "secondary_genre": "Action",
+  "genre_mixture": {
+    "Action": 0.227,
+    "Comedy": 0.2059,
+    "Romance": 0.0187,
+    "Thriller": 0.2802,
+    "Adventure": 0.1481,
+    "Drama": 0.1201
+  },
+  "high_intensity_scenes": [],
+  "scene_type_distribution": {
+    "Action": 14,
+    "Thriller": 13,
+    "Comedy": 8,
+    "Emotional": 7,
+    "Dialogue": 3,
+    "Adventure": 2,
+    "Romance": 1,
+    "Suspense": 1
+  },
+  "audio_mood_distribution": {
+    "emotional": 22,
+    "intense": 18,
+    "suspense": 8,
+    "calm": 1
+  },
+  "video_emotion_distribution": {
+    "unknown": 35,
+    "neutral": 10,
+    "surprise": 1,
+    "angry": 1,
+    "happy": 1,
+    "sad": 1
+  },
+  "source_filename": "official-trailer--in-theaters-december-18---avengers-doomsday_25de8442.mp4"
+}
