@@ -1,0 +1,44 @@
+{
+  "average_emotional_intensity": 0.51,
+  "engagement_level": "Medium engagement trailer",
+  "dominant_genre": "Action",
+  "secondary_genre": "Adventure",
+  "genre_mixture": {
+    "Action": 0.6718,
+    "Comedy": 0.0221,
+    "Thriller": 0.1721,
+    "Romance": 0.0221,
+    "Drama": 0.112
+  },
+  "high_intensity_scenes": [
+    {
+      "scene": 3,
+      "time": "00:16-00:24",
+      "scene_type": "Action",
+      "EI": 0.75
+    },
+    {
+      "scene": 4,
+      "time": "00:24-00:32",
+      "scene_type": "Action",
+      "EI": 0.72
+    },
+    {
+      "scene": 16,
+      "time": "02:00-02:08",
+      "scene_type": "Action",
+      "EI": 0.81
+    }
+  ],
+  "scene_type_distribution": {
+    "Action": 13,
+    "Drama": 2,
+    "Dialogue": 1,
+    "Thriller": 1
+  },
+  "audio_mood_distribution": {
+    "emotional": 8,
+    "intense": 5,
+    "suspense": 4
+  }
+}

@@ -1,0 +1,17 @@
+scene,time,scene_type,scene_type_confidence,classification_reliable,M,A,O,F,EI,level,audio_mood,audio_emotion,audio_confidence,audio_emotion_raw_score,camera_angle,face_emotion,face_found,objects,tempo_bpm,mfcc_mean,spectral_centroid,fusion_confidence
+1,00:00.00-00:03.00,Comedy,0.4171,True,0.1131,0.4627,0.0,0.0,0.14,Low,calm,disgust,0.2633,0.2633,right,neutral,False,,143.55,-12.8723,1576.91,0.4171
+2,00:03.00-00:18.00,Emotional,0.3899,True,1.0,0.2648,0.3686,0.4194,0.73,High,calm,disgust,0.33,0.33,left,happy,True,person,152.0,-11.5424,1754.26,0.3899
+3,00:18.00-00:22.90,Romance,0.4393,True,0.5453,0.333,0.3711,0.9153,0.65,Medium,calm,disgust,0.28,0.28,right,happy,True,person,161.5,-11.0476,1702.03,0.4393
+4,00:22.90-00:24.61,Romance,0.8321,True,0.1749,0.5999,0.3087,0.0,0.26,Low,emotional,sad,0.28,0.28,left,neutral,False,person,143.55,-7.535,2084.22,0.8321
+5,00:24.61-00:26.23,Romance,0.398,True,0.182,0.472,0.4535,0.2634,0.27,Low,calm,sad,0.2567,0.2567,left,neutral,True,"bench, person",143.55,-7.3516,1706.13,0.398
+6,00:26.23-00:27.40,Drama,0.4135,True,0.2048,0.4345,0.383,0.3067,0.27,Low,calm,disgust,0.2633,0.2633,right,surprise,True,person,143.55,-9.4589,1586.16,0.4135
+7,00:27.40-00:29.24,Drama,0.4511,True,0.0374,0.6772,0.447,0.4428,0.27,Low,intense,disgust,0.2233,0.2233,left,neutral,True,"chair, person",143.55,-3.9232,1164.92,0.4511
+8,00:29.24-00:32.12,Drama,0.3607,True,0.18,0.4076,0.5081,0.6238,0.4,Medium,calm,disgust,0.3233,0.3233,left,happy,True,"bottle, person",143.55,-5.7346,1073.68,0.3607
+9,00:32.12-00:32.91,Romance,0.4398,True,0.1449,0.6773,0.3758,0.3676,0.29,Low,intense,neutral,0.2567,0.2567,right,neutral,True,person,143.55,-3.2693,1127.74,0.4398
+10,00:32.91-00:33.91,Romance,0.5991,True,0.397,0.4957,0.4715,0.9937,0.64,Medium,calm,disgust,0.2567,0.2567,right,happy,True,"person, tie",143.55,-5.0503,1024.12,0.5991
+11,00:33.91-00:35.41,Romance,0.9452,True,0.7256,0.3448,0.3595,0.2494,0.58,Medium,calm,disgust,0.33,0.33,right,disgust,True,person,143.55,-5.8307,965.16,0.9452
+12,00:35.41-00:37.00,Drama,0.7449,True,0.0344,0.4049,0.4923,0.3953,0.23,Low,calm,disgust,0.28,0.28,left,surprise,True,"bottle, person",143.55,-6.1759,958.5,0.7449
+13,00:37.00-00:39.71,Romance,0.5265,True,0.344,0.4046,0.4672,0.9083,0.6,Medium,calm,disgust,0.2433,0.2433,right,sad,True,"person, tie",143.55,-9.5262,1313.15,0.5265
+14,00:39.71-00:42.04,Drama,0.5884,True,0.5049,0.4517,0.3842,0.3017,0.45,Medium,calm,disgust,0.2767,0.2767,left,sad,True,person,143.55,-9.6124,1682.12,0.5884
+15,00:42.04-00:45.92,Romance,0.7859,True,0.7683,0.4612,0.3344,0.6426,0.66,Medium,calm,disgust,0.2433,0.2433,right,sad,True,person,103.36,-12.0449,1520.96,0.7859
+16,00:45.92-00:53.01,Comedy,0.4115,True,0.6214,0.1413,0.6113,0.3132,0.54,Medium,calm,disgust,0.3467,0.3467,right,neutral,True,"handbag, person, tie",103.36,-19.1477,1798.56,0.4115

@@ -1,0 +1,31 @@
+{
+  "average_emotional_intensity": 0.46,
+  "engagement_level": "Medium engagement trailer",
+  "dominant_genre": "Romance",
+  "secondary_genre": "Drama",
+  "genre_mixture": {
+    "Action": 0.0184,
+    "Comedy": 0.1836,
+    "Romance": 0.3213,
+    "Thriller": 0.0393,
+    "Adventure": 0.1751,
+    "Drama": 0.2623
+  },
+  "high_intensity_scenes": [],
+  "scene_type_distribution": {
+    "Emotional": 3,
+    "Romance": 2,
+    "Dialogue": 1,
+    "Comedy": 1
+  },
+  "audio_mood_distribution": {
+    "suspense": 4,
+    "calm": 3
+  },
+  "video_emotion_distribution": {
+    "sad": 1,
+    "neutral": 1,
+    "fear": 1
+  },
+  "source_filename": "Gina - Short Film Trailer (1)_1f060f88.mp4"
+}

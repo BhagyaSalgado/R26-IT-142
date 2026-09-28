@@ -1,0 +1,28 @@
+{
+  "average_emotional_intensity": 0.55,
+  "engagement_level": "Medium engagement trailer",
+  "high_intensity_scenes": [
+    {
+      "scene": 3,
+      "time": "00:16-00:24",
+      "scene_type": "Action",
+      "EI": 0.81
+    },
+    {
+      "scene": 16,
+      "time": "02:00-02:08",
+      "scene_type": "Action",
+      "EI": 0.91
+    }
+  ],
+  "video_emotion_distribution": {
+    "right": 10,
+    "left": 6,
+    "front": 1
+  },
+  "audio_mood_distribution": {
+    "suspense": 9,
+    "emotional": 5,
+    "calm": 3
+  }
+}
