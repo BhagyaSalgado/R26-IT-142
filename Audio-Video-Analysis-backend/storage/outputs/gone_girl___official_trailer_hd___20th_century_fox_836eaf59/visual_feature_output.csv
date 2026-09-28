@@ -1,0 +1,129 @@
+scene,time,raw_motion,M,O,camera_angle,camera_confidence,face_emotion,face_confidence,face_found,F,objects,emotion,scene_type,scene_type_confidence,classification_reliable
+1,00:00.00-00:02.04,0.0,0.0,0.0,right,0.8666,unknown,0.0,False,0.0,,unknown,Emotional,0.8987,True
+2,00:02.04-00:02.59,0.0,0.0,0.0,left,0.5072,unknown,0.0,False,0.0,,unknown,Emotional,0.8987,True
+3,00:02.59-00:04.09,2.9665,0.2967,0.0,left,0.8999,unknown,0.0,False,0.0,,unknown,Emotional,0.9532,True
+4,00:04.09-00:07.92,5.39,0.539,0.0,right,0.9113,unknown,0.0,False,0.0,,unknown,Emotional,0.8989,True
+5,00:07.92-00:10.47,0.0189,0.0019,0.3353,right,0.7048,unknown,0.0,False,0.0,person,unknown,Emotional,0.5263,True
+6,00:10.47-00:12.01,0.5979,0.0598,0.7869,left,0.5742,happy,0.7205,True,0.7205,"car, person",happy,Emotional,0.793,True
+7,00:12.01-00:14.22,1.5575,0.1557,0.7067,right,0.7452,sad,0.9973,True,0.9973,"chair, person, tie, vase",sad,Unknown,0.3038,False
+8,00:14.22-00:15.35,0.2142,0.0214,0.4975,right,0.7332,angry,0.4318,True,0.4318,"person, tie",angry,Emotional,0.8488,True
+9,00:15.35-00:18.35,1.885,0.1885,0.327,right,0.8916,unknown,0.0,False,0.0,person,unknown,Emotional,0.7856,True
+10,00:18.35-00:23.69,6.9579,0.6958,0.5022,left,0.8506,sad,0.9825,True,0.9825,"donut, person",sad,Emotional,0.8107,True
+11,00:23.69-00:26.23,1.1947,0.1195,0.3277,right,0.6045,angry,0.699,True,0.699,person,angry,Emotional,0.8443,True
+12,00:26.23-00:27.44,0.2448,0.0245,0.3782,right,0.9269,angry,0.6453,True,0.6453,person,angry,Emotional,0.9049,True
+13,00:27.44-00:28.74,0.0641,0.0064,0.4365,right,0.5628,unknown,0.0,False,0.0,"person, potted plant",unknown,Emotional,0.6662,True
+14,00:28.74-00:29.99,2.8036,0.2804,0.2017,left,0.5481,sad,0.991,True,0.991,"chair, couch",sad,Emotional,0.8905,True
+15,00:29.99-00:31.32,5.086,0.5086,0.3786,right,0.9343,neutral,0.707,True,0.707,person,neutral,Emotional,0.6127,True
+16,00:31.32-00:32.99,4.1267,0.4127,0.3726,right,0.8855,unknown,0.0,False,0.0,person,unknown,Emotional,0.4544,True
+17,00:32.99-00:34.37,0.2993,0.0299,0.2016,left,0.7219,unknown,0.0,False,0.0,person,unknown,Emotional,0.9378,True
+18,00:34.37-00:35.66,0.6438,0.0644,0.3756,left,0.8498,happy,0.6438,True,0.6438,person,happy,Emotional,0.8607,True
+19,00:35.66-00:37.12,0.0669,0.0067,0.4963,left,0.5449,sad,0.9712,True,0.9712,"person, tie",sad,Romance,0.4493,True
+20,00:37.12-00:38.08,0.4861,0.0486,0.6095,right,0.6213,unknown,0.0,False,0.0,"chair, cup, dining table, person",unknown,Dialogue,0.6925,True
+21,00:38.08-00:38.96,4.3678,0.4368,0.6431,front,0.611,unknown,0.0,False,0.0,"person, refrigerator, tie",unknown,Dialogue,0.614,True
+22,00:38.96-00:39.87,0.5283,0.0528,0.0,right,0.9624,unknown,0.0,False,0.0,,unknown,Emotional,0.7995,True
+23,00:39.87-00:40.75,0.4265,0.0426,0.3833,left,0.4859,unknown,0.0,False,0.0,person,unknown,Emotional,0.574,True
+24,00:40.75-00:41.58,0.4091,0.0409,0.4813,right,0.3756,neutral,0.982,True,0.982,"person, tie",neutral,Emotional,0.8175,True
+25,00:41.58-00:43.21,1.3269,0.1327,0.3674,right,0.884,sad,0.9058,True,0.9058,person,sad,Emotional,0.8581,True
+26,00:43.21-00:44.04,0.6685,0.0668,0.3792,right,0.4895,neutral,0.7783,True,0.7783,person,neutral,Romance,0.672,True
+27,00:44.04-00:44.84,0.1278,0.0128,0.9715,right,0.498,neutral,0.9581,True,0.9581,"person, truck, tv",neutral,Romance,0.8986,True
+28,00:44.84-00:45.63,0.0299,0.003,0.8992,left,0.5897,unknown,0.0,False,0.0,"person, truck, tv",unknown,Unknown,0.6888,True
+29,00:45.63-00:46.67,2.5795,0.258,0.3144,left,0.8883,unknown,0.0,False,0.0,person,unknown,Emotional,0.8845,True
+30,00:46.67-00:48.51,2.0211,0.2021,0.3812,front,0.4011,sad,0.9423,True,0.9423,person,sad,Comedy,0.4098,True
+31,00:48.51-00:49.67,0.2901,0.029,0.3674,left,0.6669,neutral,0.5528,True,0.5528,person,neutral,Romance,0.7911,True
+32,00:49.67-00:51.76,2.3164,0.2316,0.4697,right,0.3821,unknown,0.0,False,0.0,"person, tie",unknown,Dialogue,0.4172,True
+33,00:51.76-00:53.14,8.7383,0.8738,0.3967,left,0.8255,unknown,0.0,False,0.0,"bottle, cat, potted plant",unknown,Unknown,0.279,False
+34,00:53.14-00:54.76,2.6436,0.2644,0.3274,right,0.7266,unknown,0.0,False,0.0,person,unknown,Unknown,0.336,False
+35,00:54.76-00:55.51,0.6002,0.06,0.3576,right,0.7951,neutral,0.5371,True,0.5371,person,neutral,Unknown,0.549,True
+36,00:55.51-00:56.64,0.343,0.0343,0.308,right,0.688,unknown,0.0,False,0.0,person,unknown,Emotional,0.9372,True
+37,00:56.64-00:57.77,2.0178,0.2018,0.3764,right,0.674,sad,0.712,True,0.712,person,sad,Romance,0.4601,True
+38,00:57.77-00:58.56,0.3963,0.0396,0.5811,left,0.6684,neutral,0.9045,True,0.9045,"dining table, laptop, person",neutral,Romance,0.4934,True
+39,00:58.56-00:59.60,0.6605,0.066,0.5177,right,0.8517,unknown,0.0,False,0.0,"laptop, person",unknown,Comedy,0.4827,True
+40,00:59.60-01:00.77,3.8789,0.3879,0.4482,right,0.8958,sad,0.9777,True,0.9777,"person, tie",sad,Comedy,0.78,True
+41,01:00.77-01:01.81,0.3552,0.0355,0.5024,left,0.8412,neutral,0.9828,True,0.9828,"chair, cup, person",neutral,Emotional,0.7753,True
+42,01:01.81-01:03.44,0.0877,0.0088,0.37,left,0.5154,unknown,0.0,False,0.0,person,unknown,Emotional,0.6587,True
+43,01:03.44-01:04.52,1.7661,0.1766,0.3577,right,0.9658,unknown,0.0,False,0.0,person,unknown,Emotional,0.8678,True
+44,01:04.52-01:05.32,0.9484,0.0948,0.3549,left,0.6618,unknown,0.0,False,0.0,person,unknown,Emotional,0.6012,True
+45,01:05.32-01:05.90,3.3012,0.3301,0.4874,right,0.534,neutral,0.6729,True,0.6729,"cup, person",neutral,Comedy,0.5689,True
+46,01:05.90-01:06.69,0.6022,0.0602,0.3769,left,0.8675,neutral,0.7517,True,0.7517,person,neutral,Emotional,0.501,True
+47,01:06.69-01:07.57,0.0772,0.0077,0.0,right,0.9883,unknown,0.0,False,0.0,,unknown,Unknown,0.9165,True
+48,01:07.57-01:08.44,1.3386,0.1339,0.3308,right,0.6017,unknown,0.0,False,0.0,person,unknown,Unknown,0.2951,False
+49,01:08.44-01:09.40,2.47,0.247,0.2088,right,0.9818,unknown,0.0,False,0.0,person,unknown,Emotional,0.449,True
+50,01:09.40-01:10.15,0.1645,0.0165,0.3716,left,0.6986,neutral,0.9872,True,0.9872,person,neutral,Romance,0.9225,True
+51,01:10.15-01:10.90,0.2721,0.0272,0.3773,left,0.7188,happy,0.9346,True,0.9346,person,happy,Emotional,0.8802,True
+52,01:10.90-01:11.95,4.8373,0.4837,0.3775,right,0.5109,happy,0.6631,True,0.6631,person,happy,Emotional,0.9162,True
+53,01:11.95-01:12.74,0.5469,0.0547,0.3724,left,0.8011,unknown,0.0,False,0.0,person,unknown,Emotional,0.9071,True
+54,01:12.74-01:13.41,0.0768,0.0077,0.3638,front,0.5381,unknown,0.0,False,0.0,person,unknown,Emotional,0.8004,True
+55,01:13.41-01:14.20,0.317,0.0317,0.3619,right,0.8216,unknown,0.0,False,0.0,person,unknown,Emotional,0.8763,True
+56,01:14.20-01:15.33,0.2582,0.0258,0.3621,right,0.7376,unknown,0.0,False,0.0,person,unknown,Emotional,0.8931,True
+57,01:15.33-01:17.04,0.8455,0.0845,0.3821,right,0.6534,fear,0.9413,True,0.9413,person,fear,Romance,0.4395,True
+58,01:17.04-01:18.58,5.1136,0.5114,0.3786,left,0.7166,unknown,0.0,False,0.0,person,unknown,Unknown,0.2474,False
+59,01:18.58-01:20.12,1.0818,0.1082,0.3665,right,0.714,sad,0.5901,True,0.5901,person,sad,Unknown,0.4662,True
+60,01:20.12-01:21.12,0.4783,0.0478,0.3642,left,0.4919,unknown,0.0,False,0.0,person,unknown,Emotional,0.6598,True
+61,01:21.12-01:22.08,1.6525,0.1653,0.3732,right,0.6462,unknown,0.0,False,0.0,person,unknown,Emotional,0.7734,True
+62,01:22.08-01:23.46,1.1082,0.1108,0.4036,right,0.55,unknown,0.0,False,0.0,"bed, person",unknown,Emotional,0.6093,True
+63,01:23.46-01:25.92,0.0465,0.0047,0.6222,right,0.7436,angry,0.73,True,0.73,"chair, person, tv",angry,Unknown,0.5486,True
+64,01:25.92-01:27.55,8.5951,0.8595,0.5439,right,0.3585,neutral,0.5316,True,0.5316,"cell phone, person",neutral,Romance,0.8898,True
+65,01:27.55-01:29.34,1.287,0.1287,0.4526,left,0.6376,happy,0.9863,True,0.9863,"chair, person",happy,Dialogue,0.4478,True
+66,01:29.34-01:29.92,0.1721,0.0172,0.7537,left,0.6228,happy,0.9201,True,0.9201,"chair, laptop, person, tv",happy,Romance,0.4657,True
+67,01:29.92-01:30.92,5.3556,0.5356,0.5341,right,0.6342,unknown,0.0,False,0.0,"laptop, person, tv",unknown,Comedy,0.4752,True
+68,01:30.92-01:31.67,0.2742,0.0274,0.5137,left,0.8531,unknown,0.0,False,0.0,"bottle, person",unknown,Comedy,0.722,True
+69,01:31.67-01:32.55,2.2376,0.2238,0.2673,right,0.9024,unknown,0.0,False,0.0,person,unknown,Emotional,0.9134,True
+70,01:32.55-01:33.47,2.9365,0.2937,0.3768,right,0.6703,unknown,0.0,False,0.0,person,unknown,Comedy,0.5402,True
+71,01:33.47-01:34.26,0.283,0.0283,1.0,right,0.6185,sad,0.8115,True,0.8115,"bench, car, chair, person",sad,Romance,0.4752,True
+72,01:34.26-01:35.30,1.7305,0.1731,0.4579,front,0.5465,fear,0.3877,True,0.3877,"chair, person",fear,Comedy,0.7776,True
+73,01:35.30-01:36.22,0.0817,0.0082,0.7436,right,0.5956,sad,0.7256,True,0.7256,"car, person",sad,Comedy,0.4227,True
+74,01:36.22-01:37.51,1.3897,0.139,0.0,right,0.7412,unknown,0.0,False,0.0,,unknown,Emotional,0.8255,True
+75,01:37.51-01:38.35,0.7953,0.0795,0.3696,right,0.569,unknown,0.0,False,0.0,person,unknown,Unknown,0.285,False
+76,01:38.35-01:39.64,0.3654,0.0365,0.2115,right,0.9321,unknown,0.0,False,0.0,person,unknown,Emotional,0.834,True
+77,01:39.64-01:40.64,6.1599,0.616,0.2776,right,0.9413,sad,0.9795,True,0.9795,person,sad,Comedy,0.5161,True
+78,01:40.64-01:41.64,4.0682,0.4068,0.7878,right,0.5448,unknown,0.0,False,0.0,"person, train",unknown,Dialogue,0.9527,True
+79,01:41.64-01:42.48,3.7448,0.3745,0.5942,left,0.6317,unknown,0.0,False,0.0,"chair, couch, person",unknown,Dialogue,0.5089,True
+80,01:42.48-01:43.23,0.3463,0.0346,0.4191,left,0.5874,angry,0.5669,True,0.5669,"chair, person",angry,Comedy,0.5412,True
+81,01:43.23-01:43.94,0.2536,0.0254,0.8978,right,0.5829,angry,0.9589,True,0.9589,"car, person",angry,Romance,0.5092,True
+82,01:43.94-01:45.19,1.5455,0.1546,0.8742,right,0.6173,unknown,0.0,False,0.0,"car, person",unknown,Comedy,0.5757,True
+83,01:45.19-01:46.31,0.084,0.0084,0.474,front,0.4438,sad,0.5128,True,0.5128,"person, tie",sad,Comedy,0.931,True
+84,01:46.31-01:47.07,0.6397,0.064,0.8534,right,0.5412,sad,0.5398,True,0.5398,"book, chair, laptop, person, tie",sad,Comedy,0.7443,True
+85,01:47.07-01:47.98,0.0525,0.0052,0.488,left,0.5068,neutral,0.6549,True,0.6549,"person, tie",neutral,Unknown,0.6118,True
+86,01:47.98-01:48.53,0.0567,0.0057,0.3755,right,0.8686,sad,0.5861,True,0.5861,person,sad,Unknown,0.5738,True
+87,01:48.53-01:49.40,1.1231,0.1123,0.3667,left,0.9716,sad,0.9376,True,0.9376,person,sad,Unknown,0.3421,False
+88,01:49.40-01:50.94,4.4737,0.4474,0.3818,left,0.5771,neutral,0.7009,True,0.7009,person,neutral,Comedy,0.7916,True
+89,01:50.94-01:51.61,0.024,0.0024,0.7492,right,0.5168,sad,0.9308,True,0.9308,"horse, person",sad,Unknown,0.5839,True
+90,01:51.61-01:52.36,2.182,0.2182,0.3692,left,0.7752,angry,0.3972,True,0.3972,person,angry,Unknown,0.3308,False
+91,01:52.36-01:52.95,0.5143,0.0514,0.3835,right,0.655,sad,0.5521,True,0.5521,person,sad,Emotional,0.7111,True
+92,01:52.95-01:53.66,0.7248,0.0725,0.3831,left,0.499,sad,0.5718,True,0.5718,person,sad,Emotional,0.6423,True
+93,01:53.66-01:54.57,1.8621,0.1862,0.3533,right,0.6804,unknown,0.0,False,0.0,person,unknown,Emotional,0.7744,True
+94,01:54.57-01:56.12,6.05,0.605,0.7483,right,0.9739,neutral,0.5881,True,0.5881,"car, person",neutral,Romance,0.5016,True
+95,01:56.12-01:56.99,0.1715,0.0172,0.4923,right,0.7321,neutral,0.9084,True,0.9084,"person, tv",neutral,Romance,0.816,True
+96,01:56.99-01:57.66,5.4055,0.5405,0.3656,right,0.9935,unknown,0.0,False,0.0,person,unknown,Emotional,0.5887,True
+97,01:57.66-01:58.37,3.047,0.3047,0.6386,left,0.8443,unknown,0.0,False,0.0,"car, person",unknown,Comedy,0.4132,True
+98,01:58.37-01:59.12,0.6225,0.0622,0.3669,right,0.8334,unknown,0.0,False,0.0,person,unknown,Unknown,0.3792,False
+99,01:59.12-01:59.83,3.0989,0.3099,0.3783,right,0.4762,unknown,0.0,False,0.0,person,unknown,Unknown,0.3939,False
+100,01:59.83-02:00.58,0.3243,0.0324,0.3789,right,0.9463,neutral,0.9998,True,0.9998,person,neutral,Romance,0.8946,True
+101,02:00.58-02:01.58,0.1477,0.0148,0.3695,right,0.584,neutral,0.9964,True,0.9964,person,neutral,Romance,0.7819,True
+102,02:01.58-02:02.21,3.4491,0.3449,0.3766,right,0.8346,unknown,0.0,False,0.0,person,unknown,Emotional,0.6112,True
+103,02:02.21-02:03.04,0.1512,0.0151,0.3769,left,0.7122,sad,0.9421,True,0.9421,person,sad,Emotional,0.5967,True
+104,02:03.04-02:03.79,3.1248,0.3125,0.5134,right,0.523,sad,0.6854,True,0.6854,"laptop, person",sad,Comedy,0.8568,True
+105,02:03.79-02:04.58,4.7626,0.4763,0.3684,left,0.9455,unknown,0.0,False,0.0,person,unknown,Comedy,0.4311,True
+106,02:04.58-02:05.38,2.8671,0.2867,0.3759,right,0.4502,unknown,0.0,False,0.0,person,unknown,Comedy,0.6516,True
+107,02:05.38-02:06.21,1.8877,0.1888,0.4438,left,0.5181,unknown,0.0,False,0.0,"dog, person",unknown,Comedy,0.8965,True
+108,02:06.21-02:07.46,0.8418,0.0842,0.3697,right,0.8084,unknown,0.0,False,0.0,person,unknown,Emotional,0.5125,True
+109,02:07.46-02:08.00,0.802,0.0802,0.5309,right,0.9771,unknown,0.0,False,0.0,"cat, person",unknown,Comedy,0.487,True
+110,02:08.00-02:08.80,0.2272,0.0227,0.365,right,0.8487,neutral,0.8096,True,0.8096,person,neutral,Unknown,0.4211,True
+111,02:08.80-02:09.92,0.2208,0.0221,0.3693,right,0.6203,neutral,0.9945,True,0.9945,person,neutral,Romance,0.5885,True
+112,02:09.92-02:10.63,0.5731,0.0573,0.3821,left,0.568,sad,0.7271,True,0.7271,person,sad,Emotional,0.4484,True
+113,02:10.63-02:11.17,0.2596,0.026,0.3664,left,0.511,sad,0.8619,True,0.8619,person,sad,Comedy,0.8234,True
+114,02:11.17-02:12.09,0.5643,0.0564,0.3689,right,0.4692,sad,0.9794,True,0.9794,person,sad,Emotional,0.7211,True
+115,02:12.09-02:12.63,1.9242,0.1924,0.2913,left,0.748,unknown,0.0,False,0.0,person,unknown,Emotional,0.5328,True
+116,02:12.63-02:13.22,1.1109,0.1111,0.2855,right,0.7209,unknown,0.0,False,0.0,person,unknown,Unknown,0.3381,False
+117,02:13.22-02:13.76,2.2071,0.2207,0.3557,right,0.7534,unknown,0.0,False,0.0,person,unknown,Dialogue,0.4978,True
+118,02:13.76-02:14.59,0.5078,0.0508,0.3579,left,0.8111,unknown,0.0,False,0.0,person,unknown,Emotional,0.6096,True
+119,02:14.59-02:15.26,6.519,0.6519,0.4537,left,0.9403,unknown,0.0,False,0.0,"chair, person",unknown,Unknown,0.3491,False
+120,02:15.26-02:16.76,0.1168,0.0117,0.0,right,0.8317,unknown,0.0,False,0.0,,unknown,Unknown,0.9086,True
+121,02:16.76-02:17.60,0.063,0.0063,0.379,left,0.6718,unknown,0.0,False,0.0,person,unknown,Unknown,0.5912,True
+122,02:17.60-02:18.39,0.3283,0.0328,0.6134,right,0.8524,unknown,0.0,False,0.0,"bed, chair, person",unknown,Unknown,0.3131,False
+123,02:18.39-02:19.81,1.4541,0.1454,0.6302,left,0.5504,unknown,0.0,False,0.0,"bed, chair, person",unknown,Romance,0.5521,True
+124,02:19.81-02:21.72,0.7202,0.072,0.0,right,0.9737,unknown,0.0,False,0.0,,unknown,Emotional,0.7996,True
+125,02:21.72-02:25.56,0.4032,0.0403,0.4691,right,0.8793,unknown,0.0,False,0.0,airplane,unknown,Emotional,0.8252,True
+126,02:25.56-02:29.73,2.7932,0.2793,0.0,right,0.8569,unknown,0.0,False,0.0,,unknown,Emotional,0.9162,True
+127,02:29.73-02:34.99,1.5509,0.1551,0.3689,left,0.9835,happy,0.9133,True,0.9133,person,happy,Comedy,0.8966,True
+128,02:34.99-02:41.91,0.5293,0.0529,0.6938,left,0.7804,sad,0.999,True,0.999,"person, refrigerator, suitcase",sad,Comedy,0.5774,True
