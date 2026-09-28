@@ -1,0 +1,8 @@
+scene,time,raw_motion,M,O,camera_angle,camera_confidence,face_emotion,face_confidence,face_found,F,objects,emotion,scene_type,scene_type_confidence,classification_reliable
+1,00:00.00-00:08.00,7.145,0.7145,0.3622,left,0.9636,neutral,0.0,False,0.0,person,disgust,Romance,0.4387,True
+2,00:08.00-00:16.00,4.1147,0.4115,0.3667,left,0.7228,sad,0.6807,True,0.6807,person,sad,Emotional,0.5938,True
+3,00:16.00-00:24.00,6.3253,0.6325,0.3708,right,0.5977,neutral,0.0,False,0.0,person,disgust,Emotional,0.3807,True
+4,00:24.00-00:32.00,5.1522,0.5152,0.5841,left,0.8316,neutral,0.0,False,0.0,"bottle, chair, person",sad,Romance,0.6189,True
+5,00:32.00-00:40.00,5.2291,0.5229,0.5913,left,0.7997,neutral,0.8243,True,0.8243,"bottle, person, tie",neutral,Emotional,0.4221,True
+6,00:40.00-00:48.00,8.7301,0.873,0.4805,left,0.7367,neutral,0.0,False,0.0,"handbag, person",disgust,Dialogue,0.5592,True
+7,00:48.00-00:53.00,5.6179,0.5618,0.5922,right,0.905,fear,0.9924,True,0.9924,"handbag, person, tie",fear,Comedy,0.5769,True
