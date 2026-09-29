@@ -1,0 +1,42 @@
+{
+  "average_emotional_intensity": 0.44,
+  "engagement_level": "Medium engagement trailer",
+  "dominant_genre": "Comedy",
+  "secondary_genre": null,
+  "genre_mixture": {
+    "Action": 0.0404,
+    "Comedy": 0.5806,
+    "Romance": 0.0222,
+    "Thriller": 0.0964,
+    "Adventure": 0.1175,
+    "Drama": 0.1429
+  },
+  "high_intensity_scenes": [
+    {
+      "scene": 11,
+      "time": "00:19.23-00:23.27",
+      "scene_type": "Dialogue",
+      "EI": 0.7
+    }
+  ],
+  "scene_type_distribution": {
+    "Comedy": 59,
+    "Dialogue": 18,
+    "Emotional": 3,
+    "Unknown": 1
+  },
+  "audio_mood_distribution": {
+    "intense": 68,
+    "emotional": 10,
+    "suspense": 3
+  },
+  "video_emotion_distribution": {
+    "unknown": 59,
+    "happy": 10,
+    "neutral": 5,
+    "sad": 3,
+    "angry": 2,
+    "fear": 2
+  },
+  "source_filename": "Coco Official Final Trailer.mp4"
+}

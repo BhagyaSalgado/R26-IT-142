@@ -1,0 +1,36 @@
+{
+  "average_emotional_intensity": 0.39,
+  "engagement_level": "Low engagement trailer",
+  "dominant_genre": "Thriller",
+  "secondary_genre": "Drama",
+  "genre_mixture": {
+    "Action": 0.0221,
+    "Comedy": 0.0553,
+    "Romance": 0.2214,
+    "Thriller": 0.3795,
+    "Adventure": 0.0963,
+    "Drama": 0.2253
+  },
+  "high_intensity_scenes": [],
+  "scene_type_distribution": {
+    "Emotional": 5,
+    "Suspense": 5,
+    "Adventure": 1,
+    "Romance": 1,
+    "Comedy": 1,
+    "Thriller": 1
+  },
+  "audio_mood_distribution": {
+    "suspense": 8,
+    "calm": 4,
+    "emotional": 2
+  },
+  "video_emotion_distribution": {
+    "unknown": 6,
+    "neutral": 3,
+    "fear": 2,
+    "sad": 2,
+    "angry": 1
+  },
+  "source_filename": "DRIVE THROUGH FIRE Official Trailer (2026) Michael Jai White_77052879.mp4"
+}

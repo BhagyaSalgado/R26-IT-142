@@ -1,0 +1,15 @@
+scene,time,raw_motion,M,O,camera_angle,camera_confidence,face_emotion,face_confidence,face_found,F,objects,emotion,scene_type
+1,00:00-00:08,0.7402,0.074,0.3761,right,0.7299,unknown,0.0,False,0.0,person,unknown,Emotional
+2,00:08-00:16,1.9699,0.197,0.5232,left,0.5184,unknown,0.0,False,0.0,"person, tv",unknown,Emotional
+3,00:16-00:24,2.1388,0.2139,0.9361,right,0.4993,fear,0.5421,True,0.5421,"car, person",fear,Adventure
+4,00:24-00:32,2.1523,0.2152,1.0,left,0.6845,neutral,0.6717,True,0.6717,"car, chair, dog, person",neutral,Romance
+5,00:32-00:40,1.7232,0.1723,0.6952,left,0.5072,unknown,0.0,False,0.0,"chair, cup, person, potted plant",unknown,Comedy
+6,00:40-00:48,2.596,0.2596,0.3777,left,0.7021,sad,0.6433,True,0.6433,person,sad,Emotional
+7,00:48-00:56,3.6933,0.3693,1.0,right,0.573,neutral,0.8455,True,0.8455,"car, chair, person, potted plant, tie",neutral,Suspense
+8,00:56-01:04,5.349,0.5349,1.0,right,0.9764,fear,0.9906,True,0.9906,"car, cell phone, person, truck",fear,Thriller
+9,01:04-01:12,3.2623,0.3262,0.525,right,0.7569,neutral,0.8236,True,0.8236,"clock, person",neutral,Suspense
+10,01:12-01:20,6.2286,0.6229,0.9955,left,0.7642,unknown,0.0,False,0.0,"person, truck",unknown,Suspense
+11,01:20-01:28,2.4097,0.241,1.0,left,0.8385,angry,0.9437,True,0.9437,"car, person, tv",angry,Suspense
+12,01:28-01:36,2.2469,0.2247,0.3519,right,0.8286,sad,0.6215,True,0.6215,person,sad,Suspense
+13,01:36-01:44,0.0,0.0,0.0,right,0.5488,unknown,0.0,False,0.0,,unknown,Emotional
+14,01:44-01:50,0.0,0.0,0.0,left,0.5072,unknown,0.0,False,0.0,,unknown,Emotional

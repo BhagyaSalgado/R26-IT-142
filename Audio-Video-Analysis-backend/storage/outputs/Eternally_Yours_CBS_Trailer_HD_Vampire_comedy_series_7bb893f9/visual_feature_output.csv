@@ -1,0 +1,117 @@
+scene,time,raw_motion,M,O,camera_angle,camera_confidence,face_emotion,face_confidence,face_found,F,objects,emotion,scene_type,scene_type_confidence,classification_reliable
+1,00:00.00-00:00.96,1.3011,0.1301,0.3812,left,0.8493,surprise,0.5185,True,0.5185,person,surprise,Dialogue,0.4906,True
+2,00:00.96-00:01.50,8.8539,0.8854,0.5445,left,0.9593,surprise,0.3406,True,0.3406,"person, tv",surprise,Dialogue,0.5244,True
+3,00:01.50-00:03.75,4.9548,0.4955,0.3821,front,0.5318,fear,0.3136,True,0.3136,person,fear,Comedy,0.9264,True
+4,00:03.75-00:04.30,0.6782,0.0678,0.3779,right,0.4815,surprise,0.3707,True,0.3707,person,surprise,Comedy,0.6784,True
+5,00:04.30-00:04.92,4.6874,0.4687,0.5818,left,0.5496,surprise,0.2473,True,0.2473,"chair, dining table, person",surprise,Comedy,0.7999,True
+6,00:04.92-00:05.96,1.3953,0.1395,0.5553,right,0.9002,fear,0.269,True,0.269,"chair, dining table, person",fear,Comedy,0.9056,True
+7,00:05.96-00:06.97,1.6111,0.1611,1.0,right,0.9044,surprise,0.2163,True,0.2163,"bowl, cat, couch, cup, dog, person, potted plant",surprise,Dialogue,0.8488,True
+8,00:06.97-00:07.88,1.4387,0.1439,0.3833,left,0.9901,fear,0.76,True,0.76,person,fear,Comedy,0.4302,True
+9,00:07.88-00:09.84,4.6374,0.4637,0.0,right,0.6184,neutral,0.0,False,0.0,,sad,Emotional,0.9712,True
+10,00:09.84-00:10.59,7.4353,0.7435,0.5028,left,0.8876,sad,0.3401,True,0.3401,"person, tie",sad,Comedy,0.8572,True
+11,00:10.59-00:11.18,2.4229,0.2423,0.4976,left,0.9199,surprise,0.5082,True,0.5082,"person, tie",surprise,Comedy,0.8409,True
+12,00:11.18-00:11.80,0.7463,0.0746,0.3785,left,0.9893,surprise,0.4136,True,0.4136,person,surprise,Comedy,0.8471,True
+13,00:11.80-00:12.80,8.9089,0.8909,0.3786,left,0.9861,sad,0.696,True,0.696,person,sad,Comedy,0.3618,True
+14,00:12.80-00:14.31,0.2979,0.0298,0.8406,left,0.8691,surprise,0.5694,True,0.5694,"bottle, cell phone, chair, person, tv",surprise,Comedy,0.8336,True
+15,00:14.31-00:15.14,8.3596,0.836,1.0,left,0.6966,neutral,0.6048,True,0.6048,"cell phone, cow, horse, person, tv",neutral,Comedy,0.7427,True
+16,00:15.14-00:16.14,0.189,0.0189,0.7583,left,0.6845,neutral,0.0,False,0.0,"cow, horse, person, tv",sad,Dialogue,0.4173,True
+17,00:16.14-00:17.81,0.2288,0.0229,0.3766,left,0.856,surprise,0.7767,True,0.7767,person,surprise,Comedy,0.41,True
+18,00:17.81-00:18.81,0.03,0.003,0.3335,left,0.5814,neutral,0.0,False,0.0,person,disgust,Unknown,0.5004,True
+19,00:18.81-00:19.89,6.0826,0.6083,0.5518,left,0.912,fear,0.491,True,0.491,"chair, person, potted plant",fear,Comedy,0.788,True
+20,00:19.89-00:20.85,10.2496,1.0,0.4666,left,0.9084,neutral,0.1939,True,0.1939,"person, tie",neutral,Comedy,0.9217,True
+21,00:20.85-00:21.48,1.9382,0.1938,0.3718,left,0.7197,fear,0.4286,True,0.4286,person,fear,Comedy,0.9495,True
+22,00:21.48-00:22.02,9.3914,0.9391,0.38,left,0.5887,angry,0.6992,True,0.6992,person,angry,Comedy,0.5327,True
+23,00:22.02-00:23.11,4.0813,0.4081,0.3794,left,0.4471,angry,0.8431,True,0.8431,person,angry,Comedy,0.9673,True
+24,00:23.11-00:23.94,1.5338,0.1534,0.4994,right,0.5426,surprise,0.6394,True,0.6394,"person, tie",surprise,Comedy,0.7601,True
+25,00:23.94-00:24.65,1.439,0.1439,0.4957,left,0.6174,surprise,0.2462,True,0.2462,"hair drier, person",surprise,Dialogue,0.7074,True
+26,00:24.65-00:25.69,5.0339,0.5034,0.3839,front,0.5122,angry,0.5819,True,0.5819,person,angry,Comedy,0.5982,True
+27,00:25.69-00:26.44,6.9565,0.6957,0.3794,left,0.5698,surprise,0.4496,True,0.4496,person,surprise,Dialogue,0.5694,True
+28,00:26.44-00:27.15,0.4003,0.04,0.3828,left,0.8877,surprise,0.4083,True,0.4083,person,surprise,Dialogue,0.6035,True
+29,00:27.15-00:28.24,0.2519,0.0252,0.3838,left,0.7312,sad,0.2848,True,0.2848,person,sad,Romance,0.7777,True
+30,00:28.24-00:29.32,0.7612,0.0761,0.3784,front,0.4259,fear,0.307,True,0.307,person,fear,Dialogue,0.4393,True
+31,00:29.32-00:30.16,0.9385,0.0939,0.3774,left,0.6746,disgust,0.3665,True,0.3665,person,disgust,Emotional,0.5085,True
+32,00:30.16-00:31.28,1.3743,0.1374,0.0,left,0.5424,neutral,0.0,False,0.0,,disgust,Comedy,0.934,True
+33,00:31.28-00:31.87,9.4321,0.9432,0.7982,left,0.9647,angry,0.6583,True,0.6583,"book, chair, laptop, person",angry,Comedy,0.8216,True
+34,00:31.87-00:32.95,2.9816,0.2982,0.6107,left,0.607,neutral,0.3029,True,0.3029,"book, laptop, person",neutral,Comedy,0.6929,True
+35,00:32.95-00:33.95,2.3308,0.2331,0.4099,left,0.9677,angry,0.5543,True,0.5543,"chair, person",angry,Emotional,0.5738,True
+36,00:33.95-00:35.03,3.3976,0.3398,0.3847,left,0.7688,sad,0.2873,True,0.2873,person,sad,Comedy,0.9565,True
+37,00:35.03-00:36.16,1.1811,0.1181,0.3756,left,0.834,neutral,0.3212,True,0.3212,person,neutral,Emotional,0.6481,True
+38,00:36.16-00:37.20,5.1716,0.5172,0.4339,left,0.6441,fear,0.2417,True,0.2417,"chair, person",fear,Comedy,0.934,True
+39,00:37.20-00:38.62,1.1219,0.1122,0.3828,left,0.7269,sad,0.6953,True,0.6953,person,sad,Comedy,0.8673,True
+40,00:38.62-00:41.29,3.2072,0.3207,0.3759,left,0.9006,surprise,0.2254,True,0.2254,person,surprise,Dialogue,0.4553,True
+41,00:41.29-00:42.17,0.8361,0.0836,0.6819,left,0.7367,neutral,0.2354,True,0.2354,"chair, couch, dining table, person",neutral,Dialogue,0.6845,True
+42,00:42.17-00:42.92,0.2454,0.0245,0.9849,left,0.5874,neutral,0.2212,True,0.2212,"bottle, chair, cup, dining table, person, wine glass",neutral,Comedy,0.3691,True
+43,00:42.92-00:43.71,6.1729,0.6173,0.827,left,0.4146,sad,0.3441,True,0.3441,"bottle, cup, person, wine glass",sad,Comedy,0.6434,True
+44,00:43.71-00:44.59,7.3556,0.7356,0.6768,left,0.6445,happy,0.4202,True,0.4202,"chair, cup, dining table, person",happy,Comedy,0.5395,True
+45,00:44.59-00:45.34,0.5081,0.0508,0.6765,left,0.6085,neutral,0.5149,True,0.5149,"chair, cup, dining table, person",neutral,Emotional,0.6399,True
+46,00:45.34-00:46.59,1.4337,0.1434,0.5027,left,0.8318,neutral,0.3203,True,0.3203,"cup, person",neutral,Emotional,0.4498,True
+47,00:46.59-00:47.42,1.7292,0.1729,0.9026,left,0.7793,neutral,0.2685,True,0.2685,"bottle, bowl, cell phone, cup, person",neutral,Dialogue,0.6849,True
+48,00:47.42-00:48.84,0.3644,0.0364,0.6575,left,0.7678,angry,0.285,True,0.285,"bowl, cup, person",angry,Romance,0.7727,True
+49,00:48.84-00:49.63,0.7866,0.0787,0.5077,right,0.5911,fear,0.7001,True,0.7001,"cup, person",fear,Comedy,0.8478,True
+50,00:49.63-00:51.89,1.2786,0.1279,0.0,left,0.6364,neutral,0.0,False,0.0,,sad,Comedy,0.6158,True
+51,00:51.89-00:52.76,0.9759,0.0976,0.7063,left,0.5588,happy,0.3721,True,0.3721,"oven, person, tv",happy,Comedy,0.8547,True
+52,00:52.76-00:53.76,3.048,0.3048,0.5465,left,0.7224,disgust,0.3284,True,0.3284,"person, tv",disgust,Comedy,0.9355,True
+53,00:53.76-00:55.35,6.7261,0.6726,0.4733,right,0.6989,neutral,0.4665,True,0.4665,"bench, person",neutral,Comedy,0.968,True
+54,00:55.35-00:56.26,2.8389,0.2839,0.3647,left,0.7439,surprise,0.2688,True,0.2688,person,surprise,Comedy,0.8928,True
+55,00:56.26-00:58.43,4.0264,0.4026,0.3461,right,0.927,surprise,0.3982,True,0.3982,person,surprise,Comedy,0.9423,True
+56,00:58.43-00:59.64,0.572,0.0572,0.3782,left,0.9049,sad,0.4636,True,0.4636,person,sad,Comedy,0.905,True
+57,00:59.64-01:01.35,1.341,0.1341,0.3819,left,0.8084,surprise,0.5866,True,0.5866,person,surprise,Comedy,0.8448,True
+58,01:01.35-01:02.77,2.2955,0.2296,0.3565,right,0.6691,neutral,0.3499,True,0.3499,person,neutral,Comedy,0.8392,True
+59,01:02.77-01:03.40,2.3752,0.2375,0.3686,left,0.9593,surprise,0.291,True,0.291,person,surprise,Dialogue,0.5647,True
+60,01:03.40-01:04.48,1.8274,0.1827,0.3755,left,0.921,happy,0.2717,True,0.2717,person,happy,Comedy,0.7197,True
+61,01:04.48-01:05.32,1.856,0.1856,0.3636,left,0.9603,sad,0.5396,True,0.5396,person,sad,Comedy,0.4793,True
+62,01:05.32-01:07.73,4.0026,0.4003,0.3726,left,0.9104,happy,0.3801,True,0.3801,person,happy,Comedy,0.9514,True
+63,01:07.73-01:09.82,4.8667,0.4867,0.3557,left,0.7561,sad,0.5227,True,0.5227,person,sad,Comedy,0.838,True
+64,01:09.82-01:11.24,1.6618,0.1662,0.3732,left,0.7217,surprise,0.4373,True,0.4373,person,surprise,Comedy,0.7658,True
+65,01:11.24-01:13.87,0.183,0.0183,0.6211,left,0.7415,sad,0.3616,True,0.3616,"bed, book, person",sad,Comedy,0.6988,True
+66,01:13.87-01:15.83,2.9839,0.2984,0.6593,left,0.6098,surprise,0.2824,True,0.2824,"person, refrigerator, tie",surprise,Comedy,0.727,True
+67,01:15.83-01:17.33,2.2028,0.2203,0.5422,left,0.9391,sad,0.2945,True,0.2945,"couch, person",sad,Emotional,0.5432,True
+68,01:17.33-01:18.41,1.0812,0.1081,0.4535,left,0.8265,surprise,0.7661,True,0.7661,"chair, person",surprise,Emotional,0.6693,True
+69,01:18.41-01:19.37,0.5242,0.0524,0.5168,left,0.8008,surprise,0.733,True,0.733,"couch, person",surprise,Dialogue,0.4343,True
+70,01:19.37-01:20.71,1.0293,0.1029,0.4487,left,0.8098,surprise,0.5278,True,0.5278,"chair, person",surprise,Comedy,0.6799,True
+71,01:20.71-01:22.08,0.5941,0.0594,0.642,left,0.6915,surprise,0.7337,True,0.7337,"bowl, couch, person",surprise,Dialogue,0.5268,True
+72,01:22.08-01:22.87,0.9834,0.0983,0.6189,left,0.9736,surprise,0.5911,True,0.5911,"chair, couch, person",surprise,Comedy,0.6286,True
+73,01:22.87-01:23.96,1.4085,0.1408,0.5236,left,0.5755,surprise,0.7628,True,0.7628,"couch, person",surprise,Emotional,0.466,True
+74,01:23.96-01:25.96,2.1431,0.2143,0.458,left,0.6952,surprise,0.3484,True,0.3484,"chair, person",surprise,Emotional,0.4684,True
+75,01:25.96-01:27.17,0.3994,0.0399,0.6343,left,0.5802,disgust,0.566,True,0.566,"bowl, couch, person",disgust,Dialogue,0.3894,True
+76,01:27.17-01:28.59,0.7882,0.0788,0.4559,left,0.9342,disgust,0.3986,True,0.3986,"chair, person",disgust,Emotional,0.7634,True
+77,01:28.59-01:29.71,0.1621,0.0162,0.5383,left,0.8114,surprise,0.6708,True,0.6708,"couch, person",surprise,Dialogue,0.5404,True
+78,01:29.71-01:32.09,9.45,0.945,0.4679,left,0.9299,happy,0.3333,True,0.3333,"chair, person",happy,Dialogue,0.5025,True
+79,01:32.09-01:33.76,4.473,0.4473,0.0,left,0.8356,neutral,0.0,False,0.0,,disgust,Comedy,0.9541,True
+80,01:33.76-01:35.22,4.9775,0.4977,0.4889,left,0.908,happy,0.4666,True,0.4666,"person, tie",happy,Comedy,0.9422,True
+81,01:35.22-01:35.80,11.1506,1.0,0.5944,left,0.7703,happy,0.3732,True,0.3732,"chair, person, refrigerator",happy,Comedy,0.9218,True
+82,01:35.80-01:36.39,1.6132,0.1613,0.3823,left,0.5742,happy,0.4071,True,0.4071,person,happy,Comedy,0.9112,True
+83,01:36.39-01:37.14,1.7696,0.177,0.3773,left,0.66,surprise,0.2688,True,0.2688,person,surprise,Comedy,0.7858,True
+84,01:37.14-01:37.97,1.2702,0.127,0.3785,left,0.6753,disgust,0.4342,True,0.4342,person,disgust,Comedy,0.941,True
+85,01:37.97-01:40.14,0.983,0.0983,0.0,right,0.5079,neutral,0.0,False,0.0,,disgust,Comedy,0.9129,True
+86,01:40.14-01:41.18,2.2322,0.2232,0.3739,left,0.4487,fear,0.681,True,0.681,person,fear,Comedy,0.6631,True
+87,01:41.18-01:42.27,9.5146,0.9515,0.375,left,0.9911,surprise,0.3368,True,0.3368,person,surprise,Dialogue,0.4806,True
+88,01:42.27-01:43.27,1.1725,0.1173,0.3742,left,0.7182,angry,0.6012,True,0.6012,person,angry,Dialogue,0.9051,True
+89,01:43.27-01:44.15,1.4849,0.1485,0.3805,left,0.6929,surprise,0.354,True,0.354,person,surprise,Dialogue,0.9167,True
+90,01:44.15-01:44.90,1.2952,0.1295,0.381,left,0.943,neutral,0.2897,True,0.2897,person,neutral,Dialogue,0.8424,True
+91,01:44.90-01:46.15,10.7557,1.0,0.4332,left,0.8932,surprise,0.3346,True,0.3346,"chair, person",surprise,Dialogue,0.7693,True
+92,01:46.15-01:48.57,6.3944,0.6394,0.3773,left,0.6508,happy,0.2883,True,0.2883,person,happy,Dialogue,0.6161,True
+93,01:48.57-01:49.57,1.6761,0.1676,0.3761,left,0.6024,surprise,0.2998,True,0.2998,person,surprise,Dialogue,0.8249,True
+94,01:49.57-01:50.44,0.6589,0.0659,0.6486,left,0.8874,surprise,0.2249,True,0.2249,"bottle, person, tie",surprise,Dialogue,0.7025,True
+95,01:50.44-01:51.28,1.7517,0.1752,0.5934,right,0.5361,fear,0.2343,True,0.2343,"chair, person, tie",fear,Horror,0.4836,True
+96,01:51.28-01:52.11,0.5414,0.0541,0.8321,left,0.711,neutral,0.484,True,0.484,"chair, cup, dining table, person, wine glass",neutral,Comedy,0.7889,True
+97,01:52.11-01:52.82,9.5832,0.9583,1.0,left,0.6416,happy,0.349,True,0.349,"cup, dining table, dog, person, pizza, wine glass",happy,Comedy,0.7025,True
+98,01:52.82-01:53.57,1.46,0.146,0.5657,left,0.777,fear,0.5065,True,0.5065,"dog, person",fear,Comedy,0.9518,True
+99,01:53.57-01:54.41,1.5147,0.1515,0.6605,left,0.4611,fear,0.6472,True,0.6472,"person, tie, wine glass",fear,Comedy,0.9465,True
+100,01:54.41-01:55.32,5.9012,0.5901,0.7771,right,0.5059,neutral,0.4392,True,0.4392,"book, person, tie, wine glass",neutral,Comedy,0.9393,True
+101,01:55.32-01:56.20,8.5252,0.8525,0.5137,right,0.5252,surprise,0.2114,True,0.2114,"person, tie",surprise,Comedy,0.7571,True
+102,01:56.20-01:57.12,4.7431,0.4743,0.5004,right,0.9023,happy,0.3283,True,0.3283,"couch, person",happy,Comedy,0.8601,True
+103,01:57.12-01:58.54,6.8582,0.6858,0.5179,right,0.979,fear,0.4881,True,0.4881,"person, vase",fear,Comedy,0.9621,True
+104,01:58.54-01:59.54,1.6892,0.1689,0.3809,left,0.4923,surprise,0.7456,True,0.7456,person,surprise,Dialogue,0.551,True
+105,01:59.54-02:00.95,3.707,0.3707,0.3835,left,0.9936,surprise,0.2565,True,0.2565,person,surprise,Dialogue,0.6806,True
+106,02:00.95-02:02.29,0.1537,0.0154,0.3794,front,0.5324,surprise,0.4655,True,0.4655,person,surprise,Dialogue,0.4995,True
+107,02:02.29-02:03.16,2.5956,0.2596,0.3842,front,0.3862,surprise,0.6426,True,0.6426,person,surprise,Dialogue,0.4159,True
+108,02:03.16-02:04.21,1.1166,0.1117,0.3772,left,0.3511,surprise,0.2977,True,0.2977,person,surprise,Emotional,0.4338,True
+109,02:04.21-02:05.25,0.6987,0.0699,0.3823,left,0.8865,surprise,0.4177,True,0.4177,person,surprise,Dialogue,0.444,True
+110,02:05.25-02:06.71,0.5898,0.059,0.3769,left,0.3926,sad,0.4249,True,0.4249,person,sad,Comedy,0.3912,True
+111,02:06.71-02:07.67,0.2316,0.0232,0.3812,left,0.9508,surprise,0.4906,True,0.4906,person,surprise,Dialogue,0.5214,True
+112,02:07.67-02:11.26,2.6655,0.2666,0.0,left,0.6785,neutral,0.0,False,0.0,,disgust,Comedy,0.888,True
+113,02:11.26-02:14.63,3.5405,0.3541,0.3822,left,0.986,neutral,0.2594,True,0.2594,person,neutral,Emotional,0.5688,True
+114,02:14.63-02:16.72,0.1053,0.0105,0.3763,right,0.9746,neutral,0.5973,True,0.5973,person,neutral,Dialogue,0.6742,True
+115,02:16.72-02:22.35,0.774,0.0774,0.3718,right,0.914,neutral,0.3337,True,0.3337,person,neutral,Emotional,0.5453,True
+116,02:22.35-02:24.60,1.8698,0.187,0.0,right,0.6763,neutral,0.0,False,0.0,,disgust,Dialogue,0.7159,True
