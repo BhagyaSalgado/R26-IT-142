@@ -1,0 +1,89 @@
+{
+  "average_emotional_intensity": 0.38,
+  "engagement_level": "Low engagement trailer",
+  "dominant_genre": "Mystery",
+  "secondary_genre": "Comedy",
+  "genre_mixture": {
+    "Action": 0.0045,
+    "Comedy": 0.2068,
+    "Romance": 0.1042,
+    "Thriller": 0.0987,
+    "Horror": 0.2015,
+    "Adventure": 0.0819,
+    "Drama": 0.0816,
+    "Mystery": 0.2209
+  },
+  "high_intensity_scenes": [
+    {
+      "scene": 13,
+      "time": "00:11.80-00:12.80",
+      "scene_type": "Comedy",
+      "EI": 0.72
+    },
+    {
+      "scene": 15,
+      "time": "00:14.31-00:15.14",
+      "scene_type": "Comedy",
+      "EI": 0.78
+    },
+    {
+      "scene": 20,
+      "time": "00:19.89-00:20.85",
+      "scene_type": "Comedy",
+      "EI": 0.76
+    },
+    {
+      "scene": 22,
+      "time": "00:21.48-00:22.02",
+      "scene_type": "Comedy",
+      "EI": 0.74
+    },
+    {
+      "scene": 33,
+      "time": "00:31.28-00:31.87",
+      "scene_type": "Comedy",
+      "EI": 0.79
+    },
+    {
+      "scene": 78,
+      "time": "01:29.71-01:32.09",
+      "scene_type": "Dialogue",
+      "EI": 0.7
+    },
+    {
+      "scene": 81,
+      "time": "01:35.22-01:35.80",
+      "scene_type": "Comedy",
+      "EI": 0.73
+    },
+    {
+      "scene": 97,
+      "time": "01:52.11-01:52.82",
+      "scene_type": "Comedy",
+      "EI": 0.84
+    }
+  ],
+  "scene_type_distribution": {
+    "Comedy": 65,
+    "Dialogue": 33,
+    "Emotional": 14,
+    "Romance": 2,
+    "Unknown": 1,
+    "Horror": 1
+  },
+  "audio_mood_distribution": {
+    "suspense": 113,
+    "emotional": 2,
+    "calm": 1
+  },
+  "video_emotion_distribution": {
+    "surprise": 42,
+    "neutral": 17,
+    "fear": 13,
+    "sad": 12,
+    "happy": 11,
+    "angry": 7,
+    "disgust": 5
+  },
+  "source_filename": "Eternally Yours (CBS) Trailer HD - Vampire comedy series_875e204f.mp4"
+}

@@ -1,0 +1,82 @@
+scene,time,raw_motion,M,O,camera_angle,camera_confidence,face_emotion,face_confidence,face_found,F,objects,emotion,scene_type,scene_type_confidence,classification_reliable
+1,00:00.00-00:01.00,2.262,0.2262,0.6061,right,0.9133,unknown,0.0,False,0.0,airplane,unknown,Dialogue,0.8664,True
+2,00:01.00-00:02.29,0.2029,0.0203,0.0,right,0.9025,unknown,0.0,False,0.0,,unknown,Comedy,0.6234,True
+3,00:02.29-00:03.75,1.0598,0.106,0.3303,right,0.8281,unknown,0.0,False,0.0,person,unknown,Comedy,0.5255,True
+4,00:03.75-00:05.09,1.0042,0.1004,0.63,right,0.5931,unknown,0.0,False,0.0,"handbag, person, umbrella",unknown,Dialogue,0.6944,True
+5,00:05.09-00:06.46,4.9785,0.4979,0.55,right,0.6544,unknown,0.0,False,0.0,"chair, dining table, person",unknown,Comedy,0.6819,True
+6,00:06.46-00:07.67,1.1358,0.1136,0.4922,left,0.4638,unknown,0.0,False,0.0,"person, potted plant",unknown,Comedy,0.6719,True
+7,00:07.67-00:10.39,4.2791,0.4279,0.4867,right,0.8325,unknown,0.0,False,0.0,"bed, person",unknown,Comedy,0.6903,True
+8,00:10.39-00:16.14,3.5006,0.3501,0.6591,right,0.6235,unknown,0.0,False,0.0,"chair, person, potted plant, tennis racket",unknown,Dialogue,0.5498,True
+9,00:16.14-00:17.48,0.9696,0.097,0.6311,right,0.9075,unknown,0.0,False,0.0,"bowl, dog, person",unknown,Comedy,0.7045,True
+10,00:17.48-00:19.23,3.171,0.3171,0.6864,right,0.8383,unknown,0.0,False,0.0,"chair, dining table, person, potted plant",unknown,Comedy,0.7564,True
+11,00:19.23-00:23.27,4.0832,0.4083,0.8473,left,0.6617,neutral,0.9989,True,0.9989,"bottle, chair, cup, hot dog, person",neutral,Dialogue,0.672,True
+12,00:23.27-00:24.02,3.2627,0.3263,0.3741,left,0.8937,happy,0.522,True,0.522,person,happy,Comedy,0.8285,True
+13,00:24.02-00:28.11,3.8015,0.3802,0.7174,left,0.961,neutral,0.9699,True,0.9699,"chair, cup, hot dog, person",neutral,Comedy,0.5327,True
+14,00:28.11-00:29.07,1.2016,0.1202,0.0,left,0.5749,happy,0.9784,True,0.9784,,happy,Comedy,0.8042,True
+15,00:29.07-00:30.24,1.1766,0.1177,0.4353,right,0.9031,happy,0.563,True,0.563,"chair, person",happy,Comedy,0.6533,True
+16,00:30.24-00:31.07,0.7249,0.0725,0.0,right,0.4872,unknown,0.0,False,0.0,,unknown,Comedy,0.8116,True
+17,00:31.07-00:34.95,2.7823,0.2782,0.3099,right,0.8788,unknown,0.0,False,0.0,person,unknown,Comedy,0.7785,True
+18,00:34.95-00:36.29,1.0835,0.1084,0.4551,left,0.9218,unknown,0.0,False,0.0,"cup, person",unknown,Comedy,0.596,True
+19,00:36.29-00:36.83,0.7488,0.0749,0.4448,right,0.7209,unknown,0.0,False,0.0,"cup, person",unknown,Comedy,0.5989,True
+20,00:36.83-00:39.37,1.6851,0.1685,0.5987,left,0.6146,unknown,0.0,False,0.0,"bottle, chair, person",unknown,Comedy,0.6987,True
+21,00:39.37-00:40.17,0.7179,0.0718,0.4759,right,0.6916,neutral,0.4403,True,0.4403,"bottle, person",neutral,Comedy,0.9457,True
+22,00:40.17-00:41.25,0.741,0.0741,0.2931,left,0.9071,sad,0.3476,True,0.3476,person,sad,Comedy,0.8701,True
+23,00:41.25-00:42.50,0.2458,0.0246,0.0,right,0.7807,unknown,0.0,False,0.0,,unknown,Comedy,0.4667,True
+24,00:42.50-00:45.71,3.2104,0.321,0.3664,right,0.9284,unknown,0.0,False,0.0,person,unknown,Comedy,0.8219,True
+25,00:45.71-00:47.59,0.8169,0.0817,0.8066,right,0.7786,unknown,0.0,False,0.0,"car, laptop, person",unknown,Comedy,0.7544,True
+26,00:47.59-00:48.55,0.4254,0.0425,0.3558,left,0.4454,unknown,0.0,False,0.0,person,unknown,Comedy,0.7002,True
+27,00:48.55-00:49.72,2.5183,0.2518,0.3366,left,0.7414,unknown,0.0,False,0.0,person,unknown,Comedy,0.695,True
+28,00:49.72-00:50.68,2.7199,0.272,0.4978,right,0.9105,unknown,0.0,False,0.0,"cell phone, person",unknown,Comedy,0.7022,True
+29,00:50.68-00:54.18,3.4851,0.3485,0.5168,right,0.3715,unknown,0.0,False,0.0,"frisbee, person",unknown,Dialogue,0.731,True
+30,00:54.18-00:55.43,1.6974,0.1697,0.0,right,0.918,unknown,0.0,False,0.0,,unknown,Comedy,0.873,True
+31,00:55.43-00:56.64,2.9208,0.2921,0.811,right,0.7799,unknown,0.0,False,0.0,"person, truck",unknown,Comedy,0.6155,True
+32,00:56.64-00:57.35,1.4922,0.1492,0.506,right,0.8906,unknown,0.0,False,0.0,"dog, person",unknown,Dialogue,0.7134,True
+33,00:57.35-00:58.27,2.1984,0.2198,0.3336,right,0.6028,unknown,0.0,False,0.0,person,unknown,Dialogue,0.8231,True
+34,00:58.27-00:59.52,0.0909,0.0091,0.4256,right,0.8185,unknown,0.0,False,0.0,"person, teddy bear",unknown,Dialogue,0.8584,True
+35,00:59.52-01:00.39,1.1746,0.1175,0.344,right,0.9672,unknown,0.0,False,0.0,person,unknown,Dialogue,0.7164,True
+36,01:00.39-01:02.23,3.2947,0.3295,0.0,right,0.8865,unknown,0.0,False,0.0,,unknown,Comedy,0.7095,True
+37,01:02.23-01:03.10,0.354,0.0354,0.2777,left,0.5885,unknown,0.0,False,0.0,person,unknown,Dialogue,0.4894,True
+38,01:03.10-01:03.69,0.1288,0.0129,0.2602,right,0.9541,unknown,0.0,False,0.0,person,unknown,Dialogue,0.4384,True
+39,01:03.69-01:04.90,2.7338,0.2734,0.0,left,0.8401,unknown,0.0,False,0.0,,unknown,Comedy,0.7058,True
+40,01:04.90-01:05.48,2.0783,0.2078,0.4523,right,0.9056,happy,0.6251,True,0.6251,"person, traffic light",happy,Comedy,0.5999,True
+41,01:05.48-01:06.32,2.8516,0.2852,0.0,right,0.5515,neutral,0.6852,True,0.6852,,neutral,Comedy,0.9408,True
+42,01:06.32-01:06.98,0.7717,0.0772,0.3704,right,0.7755,happy,0.997,True,0.997,person,happy,Comedy,0.6557,True
+43,01:06.98-01:07.65,2.5779,0.2578,0.3743,left,0.8215,happy,0.997,True,0.997,person,happy,Comedy,0.7826,True
+44,01:07.65-01:09.28,1.755,0.1755,0.3627,right,0.7072,unknown,0.0,False,0.0,person,unknown,Dialogue,0.5011,True
+45,01:09.28-01:09.90,0.658,0.0658,0.5297,left,0.8342,unknown,0.0,False,0.0,"cat, person",unknown,Emotional,0.6807,True
+46,01:09.90-01:10.49,1.0999,0.11,0.4759,right,0.9476,unknown,0.0,False,0.0,"cat, person",unknown,Comedy,0.6246,True
+47,01:10.49-01:11.28,0.3831,0.0383,0.3532,right,0.756,unknown,0.0,False,0.0,person,unknown,Dialogue,0.4999,True
+48,01:11.28-01:12.41,2.4724,0.2472,0.3579,front,0.4648,unknown,0.0,False,0.0,person,unknown,Comedy,0.5652,True
+49,01:12.41-01:13.32,3.0803,0.308,0.3615,right,0.879,happy,0.5003,True,0.5003,person,happy,Comedy,0.8311,True
+50,01:13.32-01:16.74,3.8624,0.3862,0.3642,right,0.9967,unknown,0.0,False,0.0,person,unknown,Dialogue,0.7244,True
+51,01:16.74-01:17.58,2.3621,0.2362,0.4884,right,0.9405,unknown,0.0,False,0.0,"fire hydrant, person",unknown,Comedy,0.6687,True
+52,01:17.58-01:19.25,3.2986,0.3299,0.2187,right,0.6311,unknown,0.0,False,0.0,person,unknown,Comedy,0.7754,True
+53,01:19.25-01:20.33,4.019,0.4019,0.3507,right,0.8363,unknown,0.0,False,0.0,person,unknown,Comedy,0.792,True
+54,01:20.33-01:23.08,3.373,0.3373,0.3472,right,0.8489,happy,0.6632,True,0.6632,person,happy,Comedy,0.8263,True
+55,01:23.08-01:23.71,1.7823,0.1782,0.3629,right,0.8875,unknown,0.0,False,0.0,person,unknown,Comedy,0.6204,True
+56,01:23.71-01:24.50,3.1329,0.3133,0.3448,right,0.5117,sad,0.9106,True,0.9106,person,sad,Comedy,0.9198,True
+57,01:24.50-01:27.25,3.4571,0.3457,0.3657,right,0.5908,happy,0.9452,True,0.9452,person,happy,Comedy,0.7956,True
+58,01:27.25-01:28.00,0.1758,0.0176,0.3512,right,0.6764,unknown,0.0,False,0.0,person,unknown,Comedy,0.5991,True
+59,01:28.00-01:29.09,0.2843,0.0284,0.3325,right,0.5752,unknown,0.0,False,0.0,person,unknown,Unknown,0.3001,False
+60,01:29.09-01:31.34,3.9717,0.3972,0.3217,right,0.8875,angry,0.4367,True,0.4367,person,angry,Comedy,0.8884,True
+61,01:31.34-01:32.30,3.7727,0.3773,0.2951,right,0.7451,unknown,0.0,False,0.0,person,unknown,Comedy,0.6848,True
+62,01:32.30-01:33.51,3.1215,0.3121,0.7359,left,0.6907,unknown,0.0,False,0.0,"person, train",unknown,Dialogue,0.7114,True
+63,01:33.51-01:34.30,1.5621,0.1562,0.3429,right,0.6602,unknown,0.0,False,0.0,person,unknown,Dialogue,0.4977,True
+64,01:34.30-01:36.68,2.8911,0.2891,0.2764,right,0.9161,angry,0.5042,True,0.5042,person,angry,Comedy,0.85,True
+65,01:36.68-01:37.43,0.5189,0.0519,0.3361,right,0.9426,neutral,0.8319,True,0.8319,person,neutral,Comedy,0.839,True
+66,01:37.43-01:38.81,3.1149,0.3115,0.3511,right,0.7863,sad,0.5561,True,0.5561,person,sad,Comedy,0.9227,True
+67,01:38.81-01:39.64,2.1558,0.2156,0.491,left,0.9259,unknown,0.0,False,0.0,"bird, person",unknown,Comedy,0.5175,True
+68,01:39.64-01:42.94,0.3948,0.0395,0.3586,right,0.8469,unknown,0.0,False,0.0,person,unknown,Comedy,0.591,True
+69,01:42.94-01:47.86,2.9534,0.2953,0.3528,right,0.9863,fear,0.9288,True,0.9288,person,fear,Comedy,0.9091,True
+70,01:47.86-01:48.53,1.4163,0.1416,0.4078,right,0.6693,happy,0.9974,True,0.9974,"chair, person",happy,Dialogue,0.5364,True
+71,01:48.53-01:49.98,2.5799,0.258,0.3544,left,0.8036,fear,0.6737,True,0.6737,person,fear,Comedy,0.9552,True
+72,01:49.98-01:50.65,2.7131,0.2713,0.5157,right,0.9355,unknown,0.0,False,0.0,"bird, person",unknown,Comedy,0.5695,True
+73,01:50.65-01:51.19,0.9927,0.0993,0.3223,right,0.8898,unknown,0.0,False,0.0,person,unknown,Comedy,0.4919,True
+74,01:51.19-01:52.32,3.4491,0.3449,0.7819,right,0.9904,unknown,0.0,False,0.0,"bird, person, toothbrush, tv",unknown,Comedy,0.5725,True
+75,01:52.32-01:53.74,2.629,0.2629,0.3722,right,0.9819,unknown,0.0,False,0.0,person,unknown,Comedy,0.75,True
+76,01:53.74-01:55.62,3.7997,0.38,0.37,right,0.9077,unknown,0.0,False,0.0,person,unknown,Comedy,0.6133,True
+77,01:55.62-01:56.45,2.6064,0.2606,0.3688,right,0.8985,unknown,0.0,False,0.0,person,unknown,Comedy,0.5304,True
+78,01:56.45-01:58.83,0.2636,0.0264,0.0,left,0.5651,unknown,0.0,False,0.0,,unknown,Comedy,0.6348,True
+79,01:58.83-02:06.25,4.4961,0.4496,0.496,right,0.7926,unknown,0.0,False,0.0,"handbag, person",unknown,Dialogue,0.664,True
+80,02:06.25-02:09.67,0.3099,0.031,0.0,left,0.5589,unknown,0.0,False,0.0,,unknown,Emotional,0.8277,True
+81,02:09.67-02:10.17,0.0,0.0,0.0,left,0.5072,unknown,0.0,False,0.0,,unknown,Emotional,0.8828,True

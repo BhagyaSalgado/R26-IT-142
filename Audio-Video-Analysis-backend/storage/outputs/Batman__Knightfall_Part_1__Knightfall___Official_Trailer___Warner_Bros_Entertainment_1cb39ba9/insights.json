@@ -1,0 +1,53 @@
+{
+  "average_emotional_intensity": 0.41,
+  "engagement_level": "Medium engagement trailer",
+  "dominant_genre": "Thriller",
+  "secondary_genre": "Drama",
+  "genre_mixture": {
+    "Action": 0.1408,
+    "Comedy": 0.2138,
+    "Romance": 0.0344,
+    "Thriller": 0.2242,
+    "Adventure": 0.1701,
+    "Drama": 0.2167
+  },
+  "high_intensity_scenes": [
+    {
+      "scene": 27,
+      "time": "00:29.36-00:30.74",
+      "scene_type": "Comedy",
+      "EI": 0.73
+    },
+    {
+      "scene": 33,
+      "time": "00:35.58-00:36.83",
+      "scene_type": "Dialogue",
+      "EI": 0.78
+    }
+  ],
+  "scene_type_distribution": {
+    "Comedy": 20,
+    "Dialogue": 15,
+    "Unknown": 13,
+    "Emotional": 12,
+    "Thriller": 8,
+    "Action": 6,
+    "Romance": 3,
+    "Suspense": 1
+  },
+  "audio_mood_distribution": {
+    "emotional": 70,
+    "suspense": 7,
+    "calm": 1
+  },
+  "video_emotion_distribution": {
+    "fear": 3,
+    "neutral": 3,
+    "angry": 3,
+    "sad": 2,
+    "disgust": 1,
+    "happy": 1,
+    "surprise": 1
+  },
+  "source_filename": "Batman_ Knightfall Part 1_ Knightfall _ Official Trailer _ Warner Bros. Entertainment_9c2e5b9e.mp4"
+}
