@@ -1,0 +1,61 @@
+scene,time,scene_type,scene_type_confidence,classification_reliable,M,A,O,F,EI,level,audio_mood,audio_emotion,audio_confidence,audio_emotion_raw_score,camera_angle,face_emotion,face_found,objects,tempo_bpm,mfcc_mean,spectral_centroid,fusion_confidence
+1,00:00.00-00:04.17,Emotional,0.817,True,0.0904,0.7252,0.0,0.0,0.25,Low,emotional,angry,0.3103,0.3103,left,unknown,False,,112.35,1.7655,1229.5,0.817
+2,00:04.17-00:09.88,Emotional,0.6762,True,0.1479,0.598,0.0,0.0,0.23,Low,emotional,happy,0.3846,0.3846,right,unknown,False,,198.77,0.7909,650.35,0.6762
+3,00:09.88-00:11.72,Emotional,0.6868,True,0.1283,1.0,0.4358,0.0,0.43,Medium,emotional,sad,0.2571,0.2571,right,unknown,False,airplane,92.29,8.4923,1818.91,0.6868
+4,00:11.72-00:13.35,Unknown,0.3181,False,0.1265,0.9848,0.2007,0.0,0.38,Low,emotional,sad,0.2571,0.2571,right,unknown,False,person,92.29,8.7764,1934.07,0.3181
+5,00:13.35-00:20.27,Emotional,0.9033,True,0.0612,0.5095,0.0,0.0,0.17,Low,suspense,sad,0.3056,0.3056,right,unknown,False,,95.7,-0.0708,845.3,0.9033
+6,00:20.27-00:21.98,Emotional,0.4163,True,0.1827,1.0,0.0,0.0,0.36,Low,emotional,sad,0.2813,0.2813,left,unknown,False,,92.29,8.452,1885.77,0.4163
+7,00:21.98-00:23.77,Dialogue,0.7791,True,0.1477,0.9312,0.6481,0.0,0.46,Medium,emotional,angry,0.2683,0.2683,right,unknown,False,airplane,92.29,8.6992,2561.73,0.7791
+8,00:23.77-00:30.32,Romance,0.8811,True,0.386,0.5308,0.6854,0.0,0.43,Medium,suspense,happy,0.3871,0.3871,right,unknown,False,airplane,117.45,1.6752,1314.99,0.8811
+9,00:30.32-00:31.99,Dialogue,0.4379,True,0.2398,1.0,0.0,0.0,0.38,Low,emotional,angry,0.2973,0.2973,left,unknown,False,,92.29,9.4353,2293.42,0.4379
+10,00:31.99-00:33.78,Dialogue,0.7548,True,0.0086,1.0,0.6477,0.0,0.43,Medium,emotional,angry,0.2973,0.2973,right,unknown,False,airplane,92.29,8.7929,2356.75,0.7548
+11,00:33.78-00:34.62,Dialogue,0.7589,True,0.5468,1.0,0.2997,0.0,0.55,Medium,emotional,angry,0.3061,0.3061,right,unknown,False,"keyboard, person",92.29,11.0594,3472.85,0.7589
+12,00:34.62-00:38.33,Emotional,0.6378,True,0.0471,1.0,0.6506,0.0,0.45,Medium,emotional,sad,0.2812,0.2812,left,unknown,False,airplane,92.29,9.3307,1788.49,0.6378
+13,00:38.33-00:41.88,Emotional,0.552,True,1.0,0.6756,0.0,0.0,0.55,Medium,emotional,angry,0.2812,0.2812,right,unknown,False,,107.67,2.0153,804.5,0.552
+14,00:41.88-00:45.67,Unknown,0.3894,False,0.4453,0.4812,0.9852,0.0,0.5,Medium,suspense,sad,0.3333,0.3333,right,unknown,False,"airplane, person",95.7,-0.6385,791.75,0.3894
+15,00:45.67-00:53.60,Romance,0.6921,True,0.2388,0.202,0.535,0.847,0.38,Low,suspense,sad,0.3333,0.3333,left,angry,True,"banana, person",172.27,-10.5675,553.1,0.6921
+16,00:53.60-00:58.39,Emotional,0.9187,True,0.1332,0.3039,0.3682,0.7877,0.33,Low,calm,sad,0.44,0.44,right,sad,True,person,86.13,-5.3731,734.18,0.9187
+17,00:58.39-01:00.39,Unknown,0.9673,True,0.0,0.7865,0.0,0.0,0.24,Low,emotional,angry,0.3235,0.3235,left,unknown,False,,92.29,7.068,2015.97,0.9673
+18,01:00.39-01:02.31,Dialogue,0.8254,True,1.0,1.0,0.5646,0.0,0.76,High,emotional,angry,0.2973,0.2973,right,unknown,False,airplane,92.29,10.669,2341.99,0.8254
+19,01:02.31-01:04.15,Dialogue,0.7519,True,0.1524,0.8018,0.7292,0.0,0.44,Medium,emotional,angry,0.3333,0.3333,right,unknown,False,"person, truck",92.29,6.582,2979.99,0.7519
+20,01:04.15-01:04.69,Dialogue,0.721,True,0.5531,1.0,0.2587,0.0,0.55,Medium,emotional,angry,0.3333,0.3333,right,unknown,False,person,92.29,10.2868,2807.36,0.721
+21,01:04.69-01:09.36,Comedy,0.8187,True,0.264,1.0,0.2853,0.0,0.45,Medium,intense,angry,0.3409,0.3409,right,unknown,False,person,143.55,9.3975,2555.24,0.8187
+22,01:09.36-01:15.20,Unknown,0.64,True,0.081,0.9339,0.0,0.0,0.31,Low,emotional,angry,0.2973,0.2973,right,unknown,False,,99.38,7.6141,1806.91,0.64
+23,01:15.20-01:16.91,Unknown,0.5434,True,0.2399,0.8089,0.3166,0.0,0.39,Low,emotional,sad,0.2368,0.2368,left,unknown,False,person,92.29,5.769,1687.8,0.5434
+24,01:16.91-01:18.41,Unknown,0.3754,False,0.4739,0.8359,0.4522,0.0,0.51,Medium,emotional,sad,0.2368,0.2368,left,unknown,False,"person, tv",92.29,5.7591,1693.82,0.3754
+25,01:18.41-01:19.87,Dialogue,0.8645,True,0.0753,0.7831,0.8499,0.0,0.43,Medium,emotional,angry,0.3235,0.3235,right,unknown,False,"motorcycle, person",92.29,5.6855,2015.2,0.8645
+26,01:19.87-01:20.83,Unknown,0.3951,False,0.0929,1.0,0.3726,0.9742,0.55,Medium,emotional,angry,0.3103,0.3103,right,neutral,True,person,92.29,7.7107,2059.09,0.3951
+27,01:20.83-01:23.50,Dialogue,0.9501,True,0.6807,1.0,1.0,0.0,0.74,High,emotional,angry,0.2812,0.2812,right,unknown,False,"airplane, motorcycle, person",92.29,7.8049,2126.29,0.9501
+28,01:23.50-01:24.50,Dialogue,0.5148,True,0.079,1.0,0.0,0.0,0.33,Low,emotional,angry,0.3061,0.3061,right,unknown,False,,92.29,11.7327,3025.38,0.5148
+29,01:24.50-01:25.34,Dialogue,0.6052,True,0.0212,0.9117,0.334,0.0,0.35,Low,emotional,angry,0.3235,0.3235,left,unknown,False,person,92.29,8.7818,2171.92,0.6052
+30,01:25.34-01:26.17,Dialogue,0.4425,True,0.9637,0.9003,0.8172,0.0,0.77,High,emotional,sad,0.2813,0.2813,right,unknown,False,"airplane, person",92.29,8.4867,1925.71,0.4425
+31,01:26.17-01:27.00,Emotional,0.7168,True,0.0076,0.8635,0.5631,0.0,0.37,Low,emotional,sad,0.2571,0.2571,right,unknown,False,airplane,92.29,7.8452,1697.24,0.7168
+32,01:27.00-01:27.84,Emotional,0.505,True,0.0322,0.9087,0.5488,0.0,0.39,Low,emotional,sad,0.3103,0.3103,right,unknown,False,"frisbee, person",92.29,8.9737,1991.48,0.505
+33,01:27.84-01:28.46,Comedy,0.5993,True,0.3836,0.9742,0.3776,0.6939,0.61,Medium,emotional,angry,0.2973,0.2973,right,fear,True,person,92.29,9.8052,2283.97,0.5993
+34,01:28.46-01:29.17,Dialogue,0.439,True,0.4478,0.9394,0.3686,0.9402,0.65,Medium,emotional,angry,0.2812,0.2812,right,happy,True,person,92.29,9.1262,2076.9,0.439
+35,01:29.17-01:30.26,Comedy,0.7528,True,0.5897,1.0,0.6707,0.8412,0.77,High,emotional,angry,0.2973,0.2973,left,sad,True,"bottle, cow, person",92.29,9.9465,2389.44,0.7528
+36,01:30.26-01:30.84,Dialogue,0.8273,True,0.3895,0.9064,1.0,0.8644,0.74,High,emotional,angry,0.2812,0.2812,left,surprise,True,"airplane, person, tie",92.29,8.8743,2125.12,0.8273
+37,01:30.84-01:31.97,Dialogue,0.909,True,0.8218,0.9794,1.0,0.0,0.78,High,emotional,angry,0.2973,0.2973,right,unknown,False,"airplane, person",92.29,9.8361,2343.7,0.909
+38,01:31.97-01:32.51,Unknown,0.6379,True,0.0009,0.9012,0.484,0.0,0.37,Low,emotional,angry,0.2812,0.2812,right,unknown,False,"person, tv",92.29,8.9532,2127.49,0.6379
+39,01:32.51-01:33.05,Unknown,0.3598,False,1.0,0.8986,0.3426,0.4077,0.75,High,emotional,angry,0.2571,0.2571,left,neutral,True,person,92.29,8.8093,2253.87,0.3598
+40,01:33.05-01:33.68,Comedy,0.6459,True,0.0261,0.9731,0.5377,0.3943,0.47,Medium,emotional,angry,0.2973,0.2973,left,neutral,True,"person, suitcase",92.29,9.7474,2432.78,0.6459
+41,01:33.68-01:34.39,Comedy,0.5972,True,0.0177,0.9096,0.6631,0.0,0.41,Medium,emotional,angry,0.2973,0.2973,right,unknown,False,"person, suitcase, tie",92.29,9.4037,2361.86,0.5972
+42,01:34.39-01:35.14,Dialogue,0.7242,True,1.0,1.0,0.5218,0.0,0.75,High,emotional,angry,0.3333,0.3333,right,unknown,False,"bird, person",92.29,10.6648,2918.32,0.7242
+43,01:35.14-01:36.51,Dialogue,0.6139,True,1.0,1.0,0.2482,0.0,0.7,High,emotional,angry,0.2973,0.2973,right,unknown,False,person,92.29,9.8992,2429.12,0.6139
+44,01:36.51-01:37.10,Unknown,0.7747,True,0.0014,1.0,0.0,0.0,0.3,Low,emotional,angry,0.2571,0.2571,right,unknown,False,,92.29,11.2506,2391.92,0.7747
+45,01:37.10-01:39.18,Unknown,0.9542,True,0.0029,0.9759,0.0,0.0,0.29,Low,emotional,sad,0.3235,0.3235,right,unknown,False,,92.29,5.6337,738.76,0.9542
+46,01:39.18-01:41.02,Unknown,0.3499,False,0.1154,1.0,0.9314,0.0,0.53,Medium,emotional,sad,0.3235,0.3235,right,unknown,False,"airplane, person",92.29,8.2428,1287.42,0.3499
+47,01:41.02-01:41.85,Unknown,0.9403,True,0.0,0.8155,0.0,0.0,0.24,Low,emotional,sad,0.3235,0.3235,left,unknown,False,,92.29,4.6527,995.23,0.9403
+48,01:41.85-01:43.69,Romance,0.436,True,0.5709,1.0,0.0,0.0,0.5,Medium,emotional,sad,0.3235,0.3235,right,unknown,False,,92.29,9.3068,1346.74,0.436
+49,01:43.69-01:44.52,Unknown,0.9001,True,0.0,0.6928,0.0,0.0,0.21,Low,emotional,sad,0.2895,0.2895,left,unknown,False,,92.29,2.999,959.7,0.9001
+50,01:44.52-01:46.36,Emotional,0.5125,True,0.4101,1.0,0.4609,0.0,0.54,Medium,emotional,sad,0.2812,0.2812,right,unknown,False,bus,92.29,8.8377,1441.53,0.5125
+51,01:46.36-01:47.19,Unknown,0.9163,True,0.0,0.7062,0.0,0.0,0.21,Low,emotional,sad,0.2895,0.2895,left,unknown,False,,92.29,4.3795,1197.85,0.9163
+52,01:47.19-01:49.69,Dialogue,0.5694,True,0.3887,1.0,0.9193,0.0,0.62,Medium,emotional,sad,0.3103,0.3103,right,unknown,False,"bird, boat, person",92.29,9.9576,1859.16,0.5694
+53,01:49.69-01:51.28,Dialogue,0.8207,True,0.282,0.844,0.6326,0.0,0.48,Medium,emotional,angry,0.2683,0.2683,right,unknown,False,airplane,92.29,7.5384,2659.39,0.8207
+54,01:51.28-01:56.49,Emotional,0.7178,True,0.5519,0.4097,0.3532,0.0,0.39,Low,calm,sad,0.3333,0.3333,right,unknown,False,person,76.0,-3.1887,1507.24,0.7178
+55,01:56.49-01:57.08,Emotional,0.879,True,0.0,0.2197,0.2904,0.0,0.12,Low,calm,sad,0.5517,0.5517,left,unknown,False,person,92.29,-7.6792,609.49,0.879
+56,01:57.08-02:02.71,Romance,0.5891,True,0.6264,0.1393,0.3733,0.0,0.34,Low,suspense,sad,0.2941,0.2941,left,unknown,False,person,215.33,-14.3932,1018.5,0.5891
+57,02:02.71-02:06.46,Emotional,0.7992,True,0.0497,0.7181,0.0,0.0,0.23,Low,emotional,sad,0.3143,0.3143,right,unknown,False,,66.26,2.9582,807.66,0.7992
+58,02:06.46-02:08.21,Emotional,0.53,True,0.0173,0.6701,0.0,0.0,0.21,Low,emotional,sad,0.2895,0.2895,right,unknown,False,,92.29,3.4514,860.05,0.53
+59,02:08.21-02:11.55,Romance,0.8613,True,1.0,0.5551,0.6359,0.0,0.64,Medium,emotional,happy,0.3429,0.3429,right,unknown,False,airplane,123.05,0.735,1146.99,0.8613
+60,02:11.55-02:12.05,Emotional,0.936,True,0.0,0.0151,0.0,0.0,0.0,Low,calm,sad,0.5128,0.5128,left,unknown,False,,92.29,-25.602,652.31,0.936
