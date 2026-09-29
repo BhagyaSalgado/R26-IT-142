@@ -1,0 +1,4 @@
+video_path,start_time,end_time,human_scene_label
+D:/Project 4/Movie_Trailer-main/data/trailer1.mp4,12.5,15.0,Action
+D:/Project 4/Movie_Trailer-main/data/trailer1.mp4,15.0,22.1,Dialogue
+D:/Project 4/Movie_Trailer-main/data/trailer2.mp4,0.0,5.5,Establishing
