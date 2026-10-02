@@ -9,6 +9,7 @@ class Settings(BaseSettings):
     emotion_output_dir: str = ""
     popularity_api_base_url: str = "http://127.0.0.1:8001"
     cors_origins: str = "http://127.0.0.1:5173,http://127.0.0.1:5174,http://localhost:5173,http://localhost:5174"
+    allow_anonymous_access: bool = False
     firebase_credentials_path: str = "firebase-service-account.json"
     firebase_project_id: str = "movie-trailer-analyzer"
     firebase_collection: str = "trailer_recommendations"
