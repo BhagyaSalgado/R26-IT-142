@@ -41,7 +41,6 @@ from app.services.scene_type_genre import genre_from_scene_types
 # title and release date, which the on-screen text checks compare OCR against.
 from app.services.movie_metadata_fetcher import fetch_movie_metadata
 from app.services.structure_segmentation import infer_beats
-from app.services.scene_ratio_analyzer import analyze_ratios
 from app.services.trailer_baseline import build_trailer_baseline
 from app.services.cinematic_recommendation_engine import generate_cinematic_recommendations
 
@@ -589,11 +588,7 @@ def generate_recommendations(
     # curve, rather than assuming fixed percentages of the running time.
     structure_report = infer_beats(scene_rows, trailer_type)
 
-    # STEP 6 — how much of the trailer is action vs dialogue vs emotion,
-    # weighted by how confident the scene classifier was about each label.
-    ratio_analysis = analyze_ratios(scene_rows, dominant_genre)
-
-    # STEP 8 — Frame-level checks need the real title/release-date (ground truth,
+    # STEP 6 — Frame-level checks need the real title/release-date (ground truth,
     #    already fetched — cached, so this costs nothing extra) and the path
     #    to this trailer's scene thumbnails, if it has any.
     real_title = (metadata or {}).get("title", "") or ""
@@ -609,7 +604,7 @@ def generate_recommendations(
     # says so, rather than treating "unmeasured" as "black".
     colour_series = _load_colour_series(output_dir, frames_dir, scene_rows)
 
-    # STEP 9 — the actual decision stage.
+    # STEP 7 — the actual decision stage.
     # Everything above was measurement; this is where the system decides which
     # scenes are genuinely problems and writes the fix for each one.
     recommendations, timeline_insights, timing_roadmap, component_scores = generate_cinematic_recommendations(
