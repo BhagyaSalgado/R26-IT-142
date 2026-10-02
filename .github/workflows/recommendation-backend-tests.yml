@@ -1,0 +1,40 @@
+name: Recommendation backend tests
+
+on:
+  push:
+    branches:
+      - Recommendation-Engine
+    paths:
+      - "recommendation-backend/**"
+      - ".github/workflows/recommendation-backend-tests.yml"
+  pull_request:
+    paths:
+      - "recommendation-backend/**"
+      - ".github/workflows/recommendation-backend-tests.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: recommendation-backend
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: recommendation-backend/requirements.txt
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Run recommendation tests
+        run: python -B -m pytest -p no:cacheprovider -q

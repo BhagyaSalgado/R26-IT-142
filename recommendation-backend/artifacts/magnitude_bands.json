@@ -1,0 +1,9 @@
+{
+  "extreme": 0.5669,
+  "clear": 0.3006,
+  "marginal": 0.0,
+  "trained_on_trailers": 99,
+  "trained_on_scenes": 8742,
+  "extreme_percentile": 90.0,
+  "clear_percentile": 65.0
+}

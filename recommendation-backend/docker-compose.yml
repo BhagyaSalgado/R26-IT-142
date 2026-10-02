@@ -1,0 +1,7 @@
+services:
+  recommendation-api:
+    build: .
+    ports:
+      - "8010:8010"
+    env_file:
+      - .env
