@@ -1,0 +1,24 @@
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+firebase-service-account*.json
+serviceAccountKey*.json
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Runtime files
+*.log
+.service-stdin
+
+# Editors and temporary files
+.idea/
+.vscode/
+~$*
