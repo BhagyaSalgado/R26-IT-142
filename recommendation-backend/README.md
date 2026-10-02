@@ -1,126 +1,139 @@
 # Movie Trailer Recommendation Engine
 
-Separate backend component for **Content Insight and Recommendation**.
+Backend for the **Recommendation and Insight** component of the movie-trailer analyser.
 
-This service does not re-analyze video. It consumes the real outputs from the emotional analysis backend:
+The service consumes scene-level outputs produced by the audio/video backend. It builds a trailer baseline, infers genre and structure, detects editorial problems, and returns ranked, evidence-based recommendations for the frontend. It does not modify or re-edit uploaded trailers.
 
-- `final_system_output`
-- `audio_feature_output`
-- `visual_feature_output`
-- `insights`
+## Main capabilities
 
-Then it detects scene/time-frame problems and generates ranked recommendations using an explainable Recommendation Priority Score.
+- Genre-sensitive trailer profiling and empirical genre norms
+- Dynamic trailer-phase and pacing analysis
+- Supervised editorial-defect classification
+- Within-trailer anomaly and visual-integrity checks
+- Explainable recommendations with scenes, timeframes, evidence, severity, and actions
+- Firebase token verification and user-scoped Firestore history
+- Optional popularity and sentiment context
+- Deterministic local recommendation wording with optional language-model enhancement
 
-The backend now supports a supervised Random Forest recommendation model. When `RECOMMENDATION_MODEL_REQUIRED=true`, API responses are produced from the trained model artifact and the request is rejected if the model file is missing or confidence is below threshold.
-
-Generated recommendation results are stored in Firestore in a separate collection.
-
-## Structure
+## Project structure
 
 ```text
-app/
-	api/routes.py
-	core/config.py
-	firebase/firebase_config.py
-	repositories/recommendation_repository.py
-	schemas/recommendation_schema.py
-	services/recommendation_service.py
-	main.py
+recommendation-backend/
+├── app/
+│   ├── api/routes.py
+│   ├── core/config.py
+│   ├── firebase/firebase_config.py
+│   ├── repositories/recommendation_repository.py
+│   ├── schemas/recommendation_schema.py
+│   └── services/
+├── artifacts/
+│   ├── genre_norms/
+│   ├── magnitude_bands.json
+│   └── problem_model.joblib
+├── scripts/
+├── tests/
+├── .env.example
+└── requirements.txt
 ```
 
-## Install
+## Requirements
 
-```bash
+- Python 3.11 recommended
+- Audio/video backend at `http://127.0.0.1:8000`
+- Popularity backend at `http://127.0.0.1:8001` when popularity context is required
+- Firebase credentials for authenticated access and Firestore history
+
+## Installation
+
+```powershell
+cd recommendation-backend
 python -m venv .venv
-.venv\Scripts\activate
-pip install -r requirements.txt
+.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+Copy-Item .env.example .env
 ```
+
+Set `FIREBASE_CREDENTIALS_PATH` in `.env` to a local service-account file. Never commit `.env` or the service-account JSON file.
+
+## Authentication
+
+Recommendation and history endpoints require a Firebase ID token by default:
+
+```http
+Authorization: Bearer <firebase-id-token>
+```
+
+For isolated local development only, authentication can be disabled explicitly:
+
+```env
+ALLOW_ANONYMOUS_ACCESS=true
+```
+
+Keep `ALLOW_ANONYMOUS_ACCESS=false` in shared and production environments. The health endpoint remains public.
 
 ## Run
 
-The emotion analysis backend should already run on `http://127.0.0.1:8000`.
-
-```bash
-uvicorn app.main:app --reload --port 8010
+```powershell
+python -m uvicorn app.main:app --host 127.0.0.1 --port 8010 --reload
 ```
 
-Open:
-
-```text
-http://127.0.0.1:8010/docs
-```
+Open the API documentation at `http://127.0.0.1:8010/docs`.
 
 ## Endpoints
 
-```text
-GET  /api/v1/health
-POST /api/v1/recommendations/generate
-GET  /api/v1/recommendations/latest
-GET  /api/v1/recommendations/history
-GET  /api/v1/recommendations/history/{recommendation_id}
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/` | Service metadata |
+| GET | `/api/v1/health` | Health check |
+| POST | `/api/v1/recommendations/generate` | Generate recommendations from supplied analysis data |
+| GET | `/api/v1/recommendations/latest` | Generate recommendations for the latest saved analysis |
+| GET | `/api/v1/recommendations/prediction/{prediction_id}` | Generate recommendations for a selected prediction |
+| GET | `/api/v1/recommendations/history` | List the authenticated user's history |
+| GET | `/api/v1/recommendations/history/{recommendation_id}` | Load one user-scoped result |
+
+## Configuration
+
+The environment variables are documented in `.env.example`. The principal settings are:
+
+- `EMOTION_API_BASE_URL`
+- `POPULARITY_API_BASE_URL`
+- `CORS_ORIGINS`
+- `ALLOW_ANONYMOUS_ACCESS`
+- `FIREBASE_CREDENTIALS_PATH`
+- `FIREBASE_PROJECT_ID`
+- `FIREBASE_COLLECTION`
+- `FIRESTORE_TIMEOUT_SECONDS`
+- `OMDB_API_KEY`
+- `ANTHROPIC_API_KEY`
+- `GEMINI_API_KEY`
+
+The OMDb and language-model keys are optional. Without them, the service uses available scene evidence and deterministic local recommendation text.
+
+## Tests
+
+Run the complete suite without creating local cache files:
+
+```powershell
+python -B -m pytest -p no:cacheprovider -q
 ```
 
-## Train a Real Recommendation Model
+The tests cover recommendation quality, genre-sensitive behaviour, authentication, user-scoped persistence, API routes, deduplication, and response structure. GitHub Actions runs this command for recommendation-backend changes on `Recommendation-Engine`.
 
-Create a labeled CSV dataset where each row is one scene. Required columns:
+## Research and training utilities
 
-```text
-ei,audio_energy,motion,object_score,emotion_confidence,scene_type,visual_emotion,audio_mood,popularity_score,engagement_rate,priority_score,focus_area
-```
+- `scripts/build_genre_norms.py` builds empirical genre trajectories.
+- `scripts/build_magnitude_bands.py` derives calibrated magnitude bands.
+- `scripts/train_problem_model.py` trains the editorial-defect classifier.
+- `scripts/validate_genre_norms.py` validates stored norm artefacts.
+- `scripts/collect_genre_trailers.py`, `extract_colour_features.py`, and `retry_failed_chunked.py` support corpus preparation.
 
-Example target values:
+Trained runtime artefacts are committed under `artifacts/` so the service can run without retraining.
 
-- `priority_score`: integer 0..100
-- `focus_area`: one of `emotional intensity`, `soundtrack energy`, `motion and pacing`, `visual impact`, `emotion clarity`
+## Security and deployment notes
 
-The categorical values must match the live pipeline's vocabulary:
-
-- `scene_type`: `Action`, `Thriller`, `Dialogue`, `Emotional`, `Romance`, `Drama`
-- `visual_emotion`: `angry`, `disgust`, `fear`, `happy`, `sad`, `surprise`, `neutral` (DeepFace)
-- `audio_mood`: `intense`, `emotional`, `suspense`, `calm`
-
-### Generate a large synthetic training set
-
-`training/recommendation_labels.csv` only has 25 hand-written rows, which memorizes
-instantly instead of generalizing. Use the generator to build thousands of rows
-across the full feature space with the correct categorical vocabulary:
-
-```bash
-python scripts/generate_synthetic_training_data.py --rows 6000 --seed 7 --output training/recommendation_labels_synthetic.csv
-```
-
-Train and export model artifacts:
-
-```bash
-python scripts/train_recommendation_model.py --input training/recommendation_labels_synthetic.csv --output artifacts/recommendation_model.joblib --metrics artifacts/recommendation_model_metrics.json
-```
-
-After training, restart the API (the model bundle is cached in-process). The response includes `summary.recommendation_model_version`, `summary.mean_prediction_confidence`, and `model_metrics` from validation.
-
-If no artifact exists and `RECOMMENDATION_MODEL_REQUIRED=true`, recommendation endpoints return `503`. If the model's focus-area confidence is low for one specific scene, that scene falls back to the deterministic weakest-signal rule instead of failing the whole request.
-
-Use `/generate` when the frontend already has an emotion analysis result.
-
-Use `/latest` when you want this backend to fetch the latest saved emotion analysis from the emotional analysis backend and generate recommendations from it.
-
-Use `/history` to retrieve recommendation outputs saved by this component.
-
-## Firestore
-
-Create `.env` from `.env.example` and set:
-
-```text
-FIREBASE_CREDENTIALS_PATH
-FIREBASE_PROJECT_ID
-FIREBASE_COLLECTION
-```
-
-Recommended collection:
-
-```text
-trailer_recommendations
-```
-
-## Research Description
-
-This component implements an explainable recommendation layer. It identifies weak scene-level signals using emotional intensity, soundtrack energy, motion, object impact, and emotion confidence. Recommendations are ranked using an RPS score and include the exact time frame, problem, evidence, and suggested solution.
+- Keep authentication enabled outside isolated local development.
+- Store service-account and API credentials outside Git.
+- Use HTTPS and a managed secret store in production.
+- Restrict CORS origins to deployed frontend URLs.
+- Apply request-size, timeout, and retention limits at the gateway and upstream analysis service.
+- Treat recommendations as decision support; the editor retains final creative control.
